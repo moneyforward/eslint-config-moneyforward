@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    require.resolve("./rules/jest"),
+    require.resolve("./rules/node"),
   ],
   rules: {}
 };
