@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
-    // https://github.com/vercel/next.js/blob/canary/packages/eslint-config-next/index.js
-    "next"
+    require.resolve("./react"),
+    // https://github.com/vercel/next.js/blob/6f420962338fb99a377bde8e1e663bc202c95b68/packages/eslint-plugin-next/lib/index.js
+    "plugin:@next/next/recommended"
   ],
 };
