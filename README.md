@@ -35,3 +35,5 @@ Ex. Using Next.js, TypeScript, Jest in your repository,
   - Contains React and Next.js recommended rule ( `eslint-plugin-react`, `eslint-plugin-react-hooks`, `eslint-plugin-next` )
 - `@moneyforward/eslint-config-cloud-react-ui/rules/jest`
   - Contains Jest recommended rule ( `eslint-plugin-jest` )
+- `@moneyforward/eslint-config-cloud-react-ui/rules/testing-library/react`
+  - Contains React Testing Library recommended rule ( `eslint-plugin-testing-library`, `eslint-plugin-jest-dom` )
