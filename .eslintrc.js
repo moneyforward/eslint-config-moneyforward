@@ -1,3 +1,5 @@
 module.exports = {
-  extends: ['./configs/base', './configs/node'].map(require.resolve),
+  extends: ['./configs/base', './configs/node', './configs/jest.js'].map(
+    require.resolve,
+  ),
 };
