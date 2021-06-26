@@ -1,7 +1,7 @@
 {
   "name": "@moneyforward/eslint-config-cloud-react-ui",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "rules/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +15,7 @@
     "url": "https://github.com/moneyforward/eslint-config-cloud-react-ui/issues"
   },
   "homepage": "https://github.com/moneyforward/eslint-config-cloud-react-ui#readme",
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
     "eslint-plugin-jest": "^24.3.6",

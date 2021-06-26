@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    require.resolve("./rules/react"),
+    require.resolve("../configs/base"),
   ],
   rules: {}
 };
