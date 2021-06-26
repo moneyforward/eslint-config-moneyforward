@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "main": "rules/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint && prettier --check .",
+    "lint:fix": "eslint --fix && prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,10 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^4.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "prettier": "^2.3.2"
   },
   "peerDependencies": {
     "eslint": ">=7",

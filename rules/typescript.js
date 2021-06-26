@@ -1,6 +1,4 @@
 module.exports = {
-  extends: [
-    require.resolve("../configs/typescript"),
-  ],
-  rules: {}
+  extends: ['../configs/typescript'].map(require.resolve),
+  rules: {},
 };

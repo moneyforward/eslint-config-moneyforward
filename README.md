@@ -16,7 +16,7 @@ Ex. Using Next.js, TypeScript, Jest in your repository,
     "@moneyforward/eslint-config-cloud-react-ui",
     "@moneyforward/eslint-config-cloud-react-ui/rules/next",
     "@moneyforward/eslint-config-cloud-react-ui/rules/typescript",
-    "@moneyforward/eslint-config-cloud-react-ui/rules/jest",
+    "@moneyforward/eslint-config-cloud-react-ui/rules/jest"
   ]
 }
 ```
