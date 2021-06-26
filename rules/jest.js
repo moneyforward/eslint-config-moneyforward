@@ -1,6 +1,4 @@
 module.exports = {
-  extends: [
-    require.resolve("../configs/jest"),
-  ],
-  rules: {}
+  extends: ['../configs/jest'].map(require.resolve),
+  rules: {},
 };

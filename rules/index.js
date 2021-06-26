@@ -1,6 +1,4 @@
 module.exports = {
-  extends: [
-    require.resolve("../configs/base"),
-  ],
-  rules: {}
+  extends: ['../configs/base'].map(require.resolve),
+  rules: {},
 };
