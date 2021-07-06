@@ -37,3 +37,20 @@ Ex. Using Next.js, TypeScript, Jest in your repository,
   - Contains Jest recommended rule ( `eslint-plugin-jest` )
 - `@moneyforward/eslint-config-cloud-react-ui/rules/testing-library/react`
   - Contains React Testing Library recommended rule ( `eslint-plugin-testing-library`, `eslint-plugin-jest-dom` )
+
+## Prettier support
+
+Using prettier, extend `@moneyforward/eslint-config-cloud-react-ui/prettier`
+
+- Using [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier).
+  - `Turns off all rules that are unnecessary or might conflict with Prettier.`
+  - `Make sure to put it last, so it gets the chance to override other configs.`
+
+```json
+{
+  "extends": [
+    "some-other-config-you-use",
+    "@moneyforward/eslint-config-cloud-react-ui/prettier"
+  ]
+}
+```
