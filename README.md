@@ -1,10 +1,10 @@
-# @moneyforward/eslint-config-cloud-react-ui
+# eslint-config-moneyforward-fukuoka
 
-This package provides @moneyforward/cloud-react-ui's .eslintrc as an extensible shared config.
+This package provides moneyforward fukuoka's .eslintrc as an extensible shared config.
 
 ## Usage
 
-`npm install --save-dev eslint @moneyforward/eslint-config-cloud-react-ui`
+`npm install --save-dev eslint eslint-config-moneyforward-fukuoka`
 
 Ex. Using Next.js, TypeScript, Jest in your repository,
 
@@ -13,34 +13,34 @@ Ex. Using Next.js, TypeScript, Jest in your repository,
 ```json
 {
   "extends": [
-    "@moneyforward/eslint-config-cloud-react-ui",
-    "@moneyforward/eslint-config-cloud-react-ui/rules/next",
-    "@moneyforward/eslint-config-cloud-react-ui/rules/typescript",
-    "@moneyforward/eslint-config-cloud-react-ui/rules/jest"
+    "moneyforward-fukuoka",
+    "moneyforward-fukuoka/rules/next",
+    "moneyforward-fukuoka/rules/typescript",
+    "moneyforward-fukuoka/rules/jest"
   ]
 }
 ```
 
 ## Support rules
 
-- `@moneyforward/eslint-config-cloud-react-ui`
+- `moneyforward-fukuoka`
   - Contains ESLint recommended rule
-- `@moneyforward/eslint-config-cloud-react-ui/rules/node`
+- `moneyforward-fukuoka/rules/node`
   - Contains Node.js recommended rule ( `eslint-plugin-node` )
-- `@moneyforward/eslint-config-cloud-react-ui/rules/typescript`
+- `moneyforward-fukuoka/rules/typescript`
   - Contains TypeScript recommended rule ( `@typescript-eslint/eslint-plugin` )
-- `@moneyforward/eslint-config-cloud-react-ui/rules/react`
+- `moneyforward-fukuoka/rules/react`
   - Contains React recommended rule ( `eslint-plugin-react`, `eslint-plugin-react-hooks` )
-- `@moneyforward/eslint-config-cloud-react-ui/rules/next`
+- `moneyforward-fukuoka/rules/next`
   - Contains React and Next.js recommended rule ( `eslint-plugin-react`, `eslint-plugin-react-hooks`, `eslint-plugin-next` )
-- `@moneyforward/eslint-config-cloud-react-ui/rules/jest`
+- `moneyforward-fukuoka/rules/jest`
   - Contains Jest recommended rule ( `eslint-plugin-jest` )
-- `@moneyforward/eslint-config-cloud-react-ui/rules/testing-library/react`
+- `moneyforward-fukuoka/rules/testing-library/react`
   - Contains React Testing Library recommended rule ( `eslint-plugin-testing-library`, `eslint-plugin-jest-dom` )
 
 ## Prettier support
 
-Using prettier, extend `@moneyforward/eslint-config-cloud-react-ui/prettier`
+Using prettier, extend `moneyforward-fukuoka/prettier`
 
 - Using [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier).
   - `Turns off all rules that are unnecessary or might conflict with Prettier.`
@@ -48,9 +48,6 @@ Using prettier, extend `@moneyforward/eslint-config-cloud-react-ui/prettier`
 
 ```json
 {
-  "extends": [
-    "some-other-config-you-use",
-    "@moneyforward/eslint-config-cloud-react-ui/prettier"
-  ]
+  "extends": ["some-other-config-you-use", "moneyforward-fukuoka/prettier"]
 }
 ```
