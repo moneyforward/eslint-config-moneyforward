@@ -1,5 +1,5 @@
 {
-  "name": "@moneyforward/eslint-config-cloud-react-ui",
+  "name": "eslint-config-moneyforward-fukuoka",
   "version": "0.0.1",
   "main": "rules/index.js",
   "scripts": {
