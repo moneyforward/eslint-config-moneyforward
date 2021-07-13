@@ -48,6 +48,9 @@ Using prettier, extend `moneyforward-fukuoka/prettier`
 
 ```json
 {
-  "extends": ["some-other-config-you-use", "moneyforward-fukuoka/prettier"]
+  "extends": [
+    "some-other-config-you-use",
+    "moneyforward-fukuoka/rules/prettier"
+  ]
 }
 ```
