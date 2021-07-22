@@ -54,3 +54,9 @@ Using prettier, extend `moneyforward-fukuoka/prettier`
   ]
 }
 ```
+
+## Versioning
+
+- Increment major version: Changed **error** rules.
+- Increment minor version: Changed **warn** rules.
+- Increment patch version: Not changed **error** and **warn** rules.

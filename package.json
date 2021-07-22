@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-moneyforward-fukuoka",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "rules/index.js",
   "scripts": {
     "lint": "eslint && prettier --check .",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/moneyforward/eslint-config-cloud-react-ui.git"
+    "url": "git+ssh://git@github.com/moneyforward/eslint-config-moneyforward-fukuoka.git"
   },
-  "author": "Money Forward Cloud Engineers",
+  "author": "Money Forward Engineers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/moneyforward/eslint-config-cloud-react-ui/issues"
+    "url": "https://github.com/moneyforward/eslint-config-moneyforward-fukuoka/issues"
   },
-  "homepage": "https://github.com/moneyforward/eslint-config-cloud-react-ui#readme",
+  "homepage": "https://github.com/moneyforward/eslint-config-moneyforward-fukuoka#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
