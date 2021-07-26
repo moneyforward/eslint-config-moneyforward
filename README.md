@@ -1,10 +1,10 @@
-# eslint-config-moneyforward-fukuoka
+# eslint-config-moneyforward
 
-This package provides moneyforward fukuoka's .eslintrc as an extensible shared config.
+This package provides moneyforward's .eslintrc as an extensible shared config.
 
 ## Usage
 
-`npm install --save-dev eslint eslint-config-moneyforward-fukuoka`
+`npm install --save-dev eslint eslint-config-moneyforward`
 
 Ex. Using Next.js, TypeScript, Jest in your repository,
 
@@ -13,34 +13,34 @@ Ex. Using Next.js, TypeScript, Jest in your repository,
 ```json
 {
   "extends": [
-    "moneyforward-fukuoka",
-    "moneyforward-fukuoka/rules/next",
-    "moneyforward-fukuoka/rules/typescript",
-    "moneyforward-fukuoka/rules/jest"
+    "moneyforward",
+    "moneyforward/rules/next",
+    "moneyforward/rules/typescript",
+    "moneyforward/rules/jest"
   ]
 }
 ```
 
 ## Support rules
 
-- `moneyforward-fukuoka`
+- `moneyforward`
   - Contains ESLint recommended rule
-- `moneyforward-fukuoka/rules/node`
+- `moneyforward/rules/node`
   - Contains Node.js recommended rule ( `eslint-plugin-node` )
-- `moneyforward-fukuoka/rules/typescript`
+- `moneyforward/rules/typescript`
   - Contains TypeScript recommended rule ( `@typescript-eslint/eslint-plugin` )
-- `moneyforward-fukuoka/rules/react`
+- `moneyforward/rules/react`
   - Contains React recommended rule ( `eslint-plugin-react`, `eslint-plugin-react-hooks` )
-- `moneyforward-fukuoka/rules/next`
+- `moneyforward/rules/next`
   - Contains React and Next.js recommended rule ( `eslint-plugin-react`, `eslint-plugin-react-hooks`, `eslint-plugin-next` )
-- `moneyforward-fukuoka/rules/jest`
+- `moneyforward/rules/jest`
   - Contains Jest recommended rule ( `eslint-plugin-jest` )
-- `moneyforward-fukuoka/rules/testing-library/react`
+- `moneyforward/rules/testing-library/react`
   - Contains React Testing Library recommended rule ( `eslint-plugin-testing-library`, `eslint-plugin-jest-dom` )
 
 ## Prettier support
 
-Using prettier, extend `moneyforward-fukuoka/prettier`
+Using prettier, extend `moneyforward/prettier`
 
 - Using [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier).
   - `Turns off all rules that are unnecessary or might conflict with Prettier.`
@@ -48,10 +48,7 @@ Using prettier, extend `moneyforward-fukuoka/prettier`
 
 ```json
 {
-  "extends": [
-    "some-other-config-you-use",
-    "moneyforward-fukuoka/rules/prettier"
-  ]
+  "extends": ["some-other-config-you-use", "moneyforward/rules/prettier"]
 }
 ```
 
