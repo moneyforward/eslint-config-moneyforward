@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-moneyforward",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "rules/index.js",
   "scripts": {
     "lint": "eslint && prettier --check .",
