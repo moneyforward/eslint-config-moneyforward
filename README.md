@@ -48,10 +48,7 @@ Using prettier, extend `moneyforward/prettier`
 
 ```json
 {
-  "extends": [
-    "some-other-config-you-use",
-    "moneyforward/rules/prettier"
-  ]
+  "extends": ["some-other-config-you-use", "moneyforward/rules/prettier"]
 }
 ```
 
