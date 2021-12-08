@@ -5,12 +5,15 @@ jobs:
     strategy:
       matrix:
         node: [12.x, 14.x, 16.x]
+        eslint: [7, 8]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
+      - name: Use ESLint ${{ matrix.eslint }}
+        run: npm install eslint@${{ matrix.eslint }}
       - run: |
           npm install --silent
           npm run lint
