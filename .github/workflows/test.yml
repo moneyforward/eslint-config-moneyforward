@@ -14,7 +14,9 @@ jobs:
           node-version: ${{ matrix.node }}
       - name: Use ESLint ${{ matrix.eslint }}
         run: npm install eslint@${{ matrix.eslint }}
+        continue-on-error: ${{ matrix.eslint == '8' }}
       - run: |
           npm install --silent
           npm run lint
           npm run test
+        continue-on-error: ${{ matrix.eslint == '8' }}
