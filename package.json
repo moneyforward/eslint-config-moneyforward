@@ -34,7 +34,7 @@
     "eslint": "^8.31.0",
     "jest": "^29.3.1",
     "prettier": "^2.8.2",
-    "release-it": "^14.10.1"
+    "release-it": "^15.6.0"
   },
   "peerDependencies": {
     "eslint": ">=7",
