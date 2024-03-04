@@ -2,6 +2,13 @@
   "name": "eslint-config-moneyforward",
   "version": "2.0.0",
   "description": "Money Forward's ESLint rules as an extensible shared config.",
+  "main": "rules/index.js",
+  "scripts": {
+    "lint": "eslint && prettier --check .",
+    "lint:fix": "eslint --fix && prettier --write .",
+    "test": "jest",
+    "release": "release-it"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/moneyforward/eslint-config-moneyforward.git"
@@ -12,15 +19,6 @@
     "url": "https://github.com/moneyforward/eslint-config-moneyforward/issues"
   },
   "homepage": "https://github.com/moneyforward/eslint-config-moneyforward#readme",
-  "engines": {
-    "node": ">= 18.0.0"
-  },
-  "scripts": {
-    "lint": "eslint && prettier --check .",
-    "lint:fix": "eslint --fix && prettier --write .",
-    "test": "jest",
-    "release": "release-it"
-  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
