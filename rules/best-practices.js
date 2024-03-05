@@ -1,3 +1,17 @@
+/*
+ * Copyright (c) 2012 Airbnb
+ *
+ * Licensed under the MIT License: https://github.com/airbnb/javascript/blob/master/LICENSE.md
+ *
+ * This file is a copy of https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/best-practices.js
+ * with the following modifications:
+ *
+ * - Turn off `consistent-return`
+ * - Turn off `default-case`
+ * - Add `constructors` to the allow list of `no-empty-function`
+ * - Turn `no-implicit-globals` to `error`
+ */
+
 module.exports = {
   rules: {
     // enforces getter/setter pairs in objects
