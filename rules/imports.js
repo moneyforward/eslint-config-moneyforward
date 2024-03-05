@@ -106,7 +106,6 @@ module.exports = {
 
     // No Node.js builtin modules
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-nodejs-modules.md
-    // TODO: enable?
     'import/no-nodejs-modules': ['off'],
 
     /*
@@ -116,12 +115,6 @@ module.exports = {
     // disallow non-import statements appearing before import statements
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/first.md
     'import/first': ['error'],
-
-    // disallow non-import statements appearing before import statements
-    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/imports-first.md
-    // deprecated: use `import/first`
-    // TODO: Remove this rule.
-    'import/imports-first': ['off'],
 
     // disallow duplicate imports
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-duplicates.md
