@@ -6,7 +6,7 @@
  * This file is a copy of https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/imports.js
  * with the following modifications:
  *
- * - Disable `import/extensions` rule to force import path to include file extension
+ * - Disable `import/extensions` rule to avoid including file extensions in the import path
  * - Disable `import/prefer-default-export` rule to allow named exports
  * - Enable `import/no-default-export` rule to disallow default exports
  */
