@@ -6,7 +6,6 @@
  * This file is a copy of https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/es6.js
  * with the following modifications:
  *
- * - Turn `requireReturnForObjectLiteral` to `true` in `arrow-body-style`
  * - Turn off `no-useless-constructor` because it's unnecessary with TypeScript
  */
 
@@ -18,7 +17,7 @@ module.exports = {
       'error',
       'as-needed',
       {
-        requireReturnForObjectLiteral: true,
+        requireReturnForObjectLiteral: false,
       },
     ],
 
