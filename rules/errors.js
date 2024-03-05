@@ -1,3 +1,14 @@
+/*
+ * Copyright (c) 2012 Airbnb
+ *
+ * Licensed under the MIT License: https://github.com/airbnb/javascript/blob/master/LICENSE.md
+ *
+ * This file is a copy of https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/errors.js
+ * with the following modification:
+ *
+ * - Add `info`, `warn`, `error`, `time` and `timeEnd` to the allow list of `no-console`
+ */
+
 module.exports = {
   rules: {
     // Enforce “for” loop update clause moving the counter in the right direction
