@@ -213,7 +213,7 @@ module.exports = {
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/group-exports.md
     'import/group-exports': ['off'],
 
-    // forbid default exports. this is a terrible rule, do not use it.
+    // forbid default exports.
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-default-export.md
     'import/no-default-export': ['error'],
 
