@@ -7,7 +7,6 @@
  * with the following modifications:
  *
  * - Enable `func-names` rule
- * - Enable `lines-between-class-members` rule with `exceptAfterSingleLine` option
  * - Disable `no-nested-ternary` rule
  * - Enable `no-plusplus` rule with `allowForLoopAfterthoughts` option
  */
@@ -244,16 +243,6 @@ module.exports = {
     // disallow mixed 'LF' and 'CRLF' as linebreaks
     // https://eslint.org/docs/rules/linebreak-style
     'linebreak-style': ['error', 'unix'],
-
-    // require or disallow an empty line between class members
-    // https://eslint.org/docs/rules/lines-between-class-members
-    'lines-between-class-members': [
-      'error',
-      'always',
-      {
-        exceptAfterSingleLine: true,
-      },
-    ],
 
     // enforces empty lines around comments
     // https://eslint.org/docs/rules/lines-around-comment
