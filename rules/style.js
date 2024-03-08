@@ -7,7 +7,7 @@
  * with the following modifications:
  *
  * - Enable `func-names` rule
- * - Disable `no-nested-ternary` rule
+ * - Disable `no-nested-ternary` rule because there is no problem if you use line breaks and indentation properly.
  * - Enable `no-plusplus` rule with `allowForLoopAfterthoughts` option
  */
 
