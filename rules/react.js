@@ -96,6 +96,8 @@ module.exports = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md
     'react/jsx-pascal-case': ['error', { allowAllCaps: true }],
 
+    // Enforce props alphabetical sorting
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
     'react/jsx-sort-props': [
       'error',
       {
