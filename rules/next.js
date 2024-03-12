@@ -1,4 +1,8 @@
 module.exports = {
-  extends: ['../configs/next'].map(require.resolve),
+  plugins: ['@next/next'],
+  extends: [
+    'plugin:@next/next/recommended',
+    'plugin:@next/next/core-web-vitals',
+  ],
   rules: {},
 };
