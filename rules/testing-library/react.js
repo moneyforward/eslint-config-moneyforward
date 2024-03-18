@@ -1,4 +1,5 @@
 module.exports = {
-  extends: ['../../configs/testing-library/react'].map(require.resolve),
+  plugins: ['testing-library'],
+  extends: ['plugin:testing-library/react'],
   rules: {},
 };
