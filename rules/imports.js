@@ -15,6 +15,20 @@ module.exports = {
   plugins: ['import'],
   extends: ['plugin:import/recommended', 'plugin:import/errors'],
 
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.mjs', '.json'],
+      },
+    },
+    'import/extensions': ['.js', '.mjs', '.jsx'],
+    'import/core-modules': [],
+    'import/ignore': [
+      'node_modules',
+      '\\.(coffee|scss|css|less|hbs|svg|json|jpg|jpeg|png|webp)$',
+    ],
+  },
+
   rules: {
     /*
      * Static analysis:
