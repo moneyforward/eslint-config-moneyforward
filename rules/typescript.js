@@ -106,15 +106,6 @@ module.exports = {
       },
     ],
 
-    // Enforce template literal expressions to be of `string` type.
-    // https://typescript-eslint.io/rules/restrict-template-expressions/
-    '@typescript-eslint/restrict-template-expressions': [
-      'error',
-      {
-        allowBoolean: true,
-      },
-    ],
-
     // Require switch-case statements to be exhaustive.
     // https://typescript-eslint.io/rules/switch-exhaustiveness-check/
     // When using union type in the conditional expression of a switch statement,
