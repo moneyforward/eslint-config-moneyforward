@@ -1,6 +1,15 @@
 const { rules: baseBestPracticesRules } = require('./best-practices');
 const { rules: baseVariablesRules } = require('./variables');
 
+/**
+ * @remarks
+ * The following rules are too strict and may reduce productivity, so they are specified as 'warn'.
+ *
+ * - no-unsafe-assignment
+ * - no-unsafe-call
+ * - no-unsafe-argument
+ * - no-unsafe-member-access
+ */
 module.exports = {
   extends: [
     'plugin:@typescript-eslint/strict-type-checked',
@@ -63,6 +72,7 @@ module.exports = {
 
     // Enforce type definitions to consistently use either `interface` or `type`.
     // https://typescript-eslint.io/rules/consistent-type-definitions/
+    // 'Interface' has less functionality than 'type alias', so 'type' is recommended.
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
 
     // Enforce consistent usage of type imports.
@@ -70,6 +80,8 @@ module.exports = {
     '@typescript-eslint/consistent-type-imports': [
       'error',
       {
+        // It's preferable to use inline type imports to avoid redundant import lines.
+        // This feature is available in TypeScript 4.5 and later.
         fixStyle: 'inline-type-imports',
       },
     ],
@@ -79,6 +91,7 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': [
       'error',
       {
+        // Allow use of immediate functions because this may be needed within `React.useEffect`.
         ignoreIIFE: true,
       },
     ],
@@ -88,6 +101,7 @@ module.exports = {
     '@typescript-eslint/no-misused-promises': [
       'error',
       {
+        // Strict checks on promises with no return value are excessive. It's' extremely rare for this to cause a bug.
         checksVoidReturn: false,
       },
     ],
@@ -103,10 +117,13 @@ module.exports = {
 
     // Require switch-case statements to be exhaustive.
     // https://typescript-eslint.io/rules/switch-exhaustiveness-check/
+    // When using union type in the conditional expression of a switch statement,
+    // there must be no missing cases (it is OK if `default` is written)
     '@typescript-eslint/switch-exhaustiveness-check': ['error'],
 
     // Require explicit return types on functions and class methods.
     // https://typescript-eslint.io/rules/explicit-function-return-type/
+    // Type inference is sufficient for return type.
     '@typescript-eslint/explicit-function-return-type': ['off'],
 
     // Require explicit return and argument types on exported functions' and classes' public class methods.
