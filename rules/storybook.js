@@ -12,4 +12,17 @@ module.exports = {
     // Starting in CSF 3.0, story titles can be generated automatically.
     'storybook/no-title-property-in-meta': 'error',
   },
+
+  overrides: [
+    {
+      files: [
+        '*.stories.@(ts|tsx|js|jsx)',
+        '*.story.@(ts|tsx|js|jsx)',
+        '**/.storybook/**/*.@(ts|tsx|js|jsx)',
+      ],
+      rules: {
+        'import/no-default-export': ['off'],
+      },
+    },
+  ],
 };
