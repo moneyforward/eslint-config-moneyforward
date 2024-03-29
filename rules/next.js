@@ -5,5 +5,13 @@ module.exports = {
     // https://github.com/vercel/next.js/blob/v14.1.3/packages/eslint-plugin-next/src/index.ts#L56
     'plugin:@next/next/core-web-vitals',
   ],
-  rules: {},
+
+  overrides: [
+    {
+      files: ['**/pages/**/*.@(tsx|jsx)', '*.page.@(tsx|jsx)'],
+      rules: {
+        'import/no-default-export': ['off'],
+      },
+    },
+  ],
 };
