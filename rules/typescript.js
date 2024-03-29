@@ -11,6 +11,7 @@ const { rules: baseVariablesRules } = require('./variables');
  * - no-unsafe-member-access
  */
 module.exports = {
+  plugins: ['@typescript-eslint'],
   extends: [
     'plugin:@typescript-eslint/strict-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
