@@ -1,5 +1,3 @@
 module.exports = {
-  extends: ['./configs/base', './configs/node', './configs/jest.js'].map(
-    require.resolve,
-  ),
+  extends: ['./configs/essentials', './configs/node'].map(require.resolve),
 };
