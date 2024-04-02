@@ -8,7 +8,11 @@ module.exports = {
 
   overrides: [
     {
-      files: ['**/pages/**/*.@(tsx|jsx)', '*.page.@(tsx|jsx)'],
+      files: [
+        '**/pages/**/*.@(tsx|jsx|js)',
+        '*.page.@(tsx|jsx|js)',
+        '**/app/**/@(page|layout).@(tsx|jsx|js)',
+      ],
       rules: {
         'import/no-default-export': ['off'],
       },
