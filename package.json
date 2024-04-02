@@ -2,6 +2,16 @@
   "name": "eslint-config-moneyforward",
   "version": "2.0.0",
   "description": "Money Forward's ESLint rules as an extensible shared config.",
+  "exports": {
+    "./essentials": "./configs/essentials.js",
+    "./jsdoc": "./configs/jsdoc.js",
+    "./next": "./configs/next.js",
+    "./node": "./configs/node.js",
+    "./react": "./configs/react.js",
+    "./storybook": "./configs/storybook.js",
+    "./test/*": "./configs/test/*.js",
+    "./typescript": "./configs/typescript.js"
+  },
   "engines": {
     "node": ">= 18.0.0"
   },
