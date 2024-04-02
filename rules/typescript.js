@@ -11,6 +11,7 @@ const { rules: baseVariablesRules } = require('./variables');
  * - no-unsafe-member-access
  */
 module.exports = {
+  plugins: ['@typescript-eslint'],
   extends: [
     'plugin:@typescript-eslint/strict-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
@@ -146,19 +147,4 @@ module.exports = {
     // You should use type assertion style "as" instead of non-null assertion style.
     '@typescript-eslint/non-nullable-type-assertion-style': ['off'],
   },
-
-  overrides: [
-    {
-      files: ['*.@(js|cjs|mjs)'],
-      rules: {
-        // Disallow `@ts-<directive>` comments or require descriptions after directives.
-        // https://typescript-eslint.io/rules/ban-ts-comment/
-        '@typescript-eslint/ban-ts-comment': ['off'],
-
-        // Disallow `require` statements except in import statements.
-        // https://typescript-eslint.io/rules/ban-ts-comment/
-        '@typescript-eslint/no-var-requires': ['off'],
-      },
-    },
-  ],
 };
