@@ -1,26 +1,46 @@
-const fs = require('fs');
-const path = require('path');
-
-const readdirRecursively = (dir) => {
-  const dirents = fs.readdirSync(dir, { withFileTypes: true });
-  let files = [];
-  let dirs = [];
-  dirents.forEach((dirent) => {
-    if (dirent.isDirectory()) dirs.push(`${dir}/${dirent.name}`);
-    if (dirent.isFile()) files.push(`${dir}/${dirent.name}`);
-  });
-  dirs.forEach((dir) => {
-    files = readdirRecursively(dir, files);
-  });
-  return files;
-};
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable n/global-require */
+const { readdirSync } = require('fs');
+const { resolve, join } = require('path');
 
 test('parsable all configs', () => {
-  const files = readdirRecursively(path.resolve(`${__dirname}/../configs`));
-  files.forEach((file) => expect(() => require(file)).not.toThrow());
+  const dir = resolve(join(__dirname, '../configs'));
+
+  const files = readdirSync(dir, {
+    withFileTypes: true,
+  })
+    .map((dirnet) => extractFilePath(dirnet, dir))
+    .flat();
+
+  files.forEach((file) => {
+    expect(() => require(file)).not.toThrow();
+  });
 });
 
 test('parsable all rules', () => {
-  const files = readdirRecursively(path.resolve(`${__dirname}/../rules`));
-  files.forEach((file) => expect(() => require(file)).not.toThrow());
+  const dir = resolve(join(__dirname, '../rules'));
+
+  const files = readdirSync(dir, {
+    withFileTypes: true,
+  })
+    .map((dirnet) => extractFilePath(dirnet, dir))
+    .flat();
+
+  files.forEach((file) => {
+    expect(() => require(file)).not.toThrow();
+  });
 });
+
+function extractFilePath(dirent, dir) {
+  if (dirent.isFile()) {
+    return `${dir}/${dirent.name}`;
+  }
+
+  if (dirent.isDirectory()) {
+    return readdirSync(`${dir}/${dirent.name}`, {
+      withFileTypes: true,
+    })
+      .map((child) => extractFilePath(child, `${dir}/${dirent.name}`))
+      .flat();
+  }
+}
