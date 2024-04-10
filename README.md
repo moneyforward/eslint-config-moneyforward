@@ -1,5 +1,8 @@
 # eslint-config-moneyforward
 
+[![Version](https://img.shields.io/npm/v/eslint-config-moneyforward.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-moneyforward?activeTab=versions)
+[![License](https://img.shields.io/github/license/moneyforward/eslint-config-moneyforward.svg?style=flat-square)](https://github.com/moneyforward/eslint-config-moneyforward/blob/main/LICENSE)
+
 This package provides moneyforward's `.eslintrc` as an extensible shared config.
 
 ## Usage
