@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/moneyforward/eslint-config-moneyforward#readme",
   "dependencies": {
-    "@next/eslint-plugin-next": "^14.1.3",
+    "@next/eslint-plugin-next": "^14.2.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "confusing-browser-globals": "^1.0.11",
