@@ -18,7 +18,8 @@
   "scripts": {
     "lint": "eslint && prettier --check .",
     "lint:fix": "eslint --fix && prettier --write .",
-    "test": "jest"
+    "test": "jest",
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
