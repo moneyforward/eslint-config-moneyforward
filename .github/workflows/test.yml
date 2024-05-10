@@ -1,19 +1,26 @@
 name: test
-on: pull_request
+
+on:
+  pull_request:
+    branches:
+      - '*'
+
 jobs:
   test:
     strategy:
       matrix:
-        node: [14.x, 16.x, 18.x]
         eslint: [7, 8]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
+          node-version-file: ./.node-version
+
       - name: Use ESLint ${{ matrix.eslint }}
         run: npm install eslint@${{ matrix.eslint }}
+
       - run: |
           npm install --silent
           npm run lint
