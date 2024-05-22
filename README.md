@@ -57,11 +57,11 @@ We also provide various other rule sets that you can configure to suit your proj
 | -----------: | :---------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `essentials` | Contains basic, import, and promise recommended rules | [`eslint`](https://eslint.org/) <br> [`eslint-plugin-promise`](https://github.com/eslint-community/eslint-plugin-promise) <br> [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import)                                                                          |
 |      `jsdoc` | Contains JSDoc recommended rules                      | [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc)                                                                                                                                                                                                               |
-|       `next` | Contains Next.js recommended rules                    | [`eslint-plugin-next`](https://github.com/vercel/next.js/tree/canary/packages/eslint-plugin-next)                                                                                                                                                                                   |
+|       `next` | Contains Next.js recommended rules                    | [`@next/eslint-plugin-next`](https://github.com/vercel/next.js/tree/canary/packages/eslint-plugin-next)                                                                                                                                                                             |
 |       `node` | Contains Node.js recommended rules                    | [`eslint-plugin-n`](https://github.com/eslint-community/eslint-plugin-n)                                                                                                                                                                                                            |
 |      `react` | Contains React recommended rules                      | [`eslint-plugin-jsx-a11y`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y) <br> [`eslint-plugin-react-hooks`](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks) <br> [`eslint-plugin-react`](https://github.com/jsx-eslint/eslint-plugin-react) |
 |  `storybook` | Contains Storybook recommended rules                  | [`eslint-plugin-storybook`](https://github.com/storybookjs/eslint-plugin-storybook)                                                                                                                                                                                                 |
-| `test/react` | Contains Jest and React Testing Library rules         | [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest) <br> [`eslint-plugin-testing-library`](https://github.com/testing-library/eslint-plugin-testing-library)                                                                                               |
+| `test/react` | Contains Jest and React Testing Library rules         | [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest) <br> [`eslint-plugin-jest-dom`](https://github.com/testing-library/eslint-plugin-jest-dom) <br> [`eslint-plugin-testing-library`](https://github.com/testing-library/eslint-plugin-testing-library)    |
 | `typescript` | Contains TypeScript recommended rules                 | [`@eslint-typescript/eslint-plugin`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin) <br> [`@eslint-typescript/parser`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser)                                  |
 
 ## Using Prettier
@@ -89,6 +89,21 @@ Within your ESLint config file:
 ```
 
 By adding the `prettier` configuration to `extends` in the ESLint configuration, you can disable all rules in `moneyforward/essentials` that conflict with Prettier.
+
+## Migrate from an existing configuration
+
+eslint-config-moneyforward contains various plugins related to different rule sets. Therefore, users don't need to install them separately. If you have installed them in your existing configuration, we recommend uninstalling them.
+
+```bash
+npm uninstall eslint-plugin-promise eslint-plugin-import \
+  eslint-plugin-jsdoc \
+  @next/eslint-plugin-next \
+  eslint-plugin-n \
+  eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks \
+  eslint-plugin-storybook \
+  eslint-plugin-jest eslint-plugin-testing-library \
+  @eslint-typescript/eslint-plugin @eslint-typescript/parser
+```
 
 ## Versioning
 
