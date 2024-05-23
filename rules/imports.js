@@ -97,6 +97,8 @@ module.exports = {
           '**/karma.conf.js', // karma config
           '**/.eslintrc.js', // eslint config
           '**/eslint-rules/**',
+          '**/.storybook/**', // storybook config
+          '**/*.stories.{js,jsx,ts,tsx}', // storybook stories
         ],
         optionalDependencies: false,
       },
