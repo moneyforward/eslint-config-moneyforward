@@ -98,7 +98,7 @@ module.exports = {
           '**/.eslintrc.js', // eslint config
           '**/eslint-rules/**',
           '**/.storybook/**', // storybook config
-          '**/*.stories.{js,jsx,ts,tsx}', // storybook stories
+          '**/*.stories.{js,jsx,ts,tsx,mdx}', // storybook stories
         ],
         optionalDependencies: false,
       },
