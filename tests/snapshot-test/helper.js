@@ -1,3 +1,5 @@
+// @ts-check
+// @ts-ignore
 const { loadESLint } = require('eslint');
 
 /**
