@@ -3,5 +3,6 @@ module.exports = {
     '../../../configs/essentials',
     '../../../configs/react',
     '../../../configs/typescript',
+    '../../../configs/jsdoc',
   ],
 };

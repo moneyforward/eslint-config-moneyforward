@@ -1007,6 +1007,237 @@ exports[`should match ESLint configuration snapshot: next 1`] = `
     "init-declarations": [
       0,
     ],
+    "jsdoc/check-access": [
+      2,
+    ],
+    "jsdoc/check-alignment": [
+      2,
+    ],
+    "jsdoc/check-examples": [
+      0,
+    ],
+    "jsdoc/check-indentation": [
+      0,
+    ],
+    "jsdoc/check-line-alignment": [
+      0,
+    ],
+    "jsdoc/check-param-names": [
+      2,
+      {
+        "checkDestructured": false,
+      },
+    ],
+    "jsdoc/check-property-names": [
+      2,
+    ],
+    "jsdoc/check-syntax": [
+      0,
+    ],
+    "jsdoc/check-tag-names": [
+      2,
+      {
+        "definedTags": [
+          "remarks",
+          "typeParam",
+        ],
+      },
+    ],
+    "jsdoc/check-types": [
+      2,
+    ],
+    "jsdoc/check-values": [
+      2,
+    ],
+    "jsdoc/empty-tags": [
+      2,
+    ],
+    "jsdoc/implements-on-classes": [
+      2,
+    ],
+    "jsdoc/imports-as-dependencies": [
+      0,
+    ],
+    "jsdoc/informative-docs": [
+      0,
+    ],
+    "jsdoc/match-description": [
+      0,
+    ],
+    "jsdoc/match-name": [
+      0,
+    ],
+    "jsdoc/multiline-blocks": [
+      2,
+    ],
+    "jsdoc/no-bad-blocks": [
+      0,
+    ],
+    "jsdoc/no-blank-block-descriptions": [
+      0,
+    ],
+    "jsdoc/no-blank-blocks": [
+      0,
+    ],
+    "jsdoc/no-defaults": [
+      2,
+    ],
+    "jsdoc/no-missing-syntax": [
+      0,
+    ],
+    "jsdoc/no-multi-asterisks": [
+      2,
+    ],
+    "jsdoc/no-restricted-syntax": [
+      0,
+    ],
+    "jsdoc/no-types": [
+      2,
+    ],
+    "jsdoc/no-undefined-types": [
+      0,
+    ],
+    "jsdoc/require-asterisk-prefix": [
+      0,
+    ],
+    "jsdoc/require-description": [
+      2,
+      {
+        "checkConstructors": true,
+        "checkGetters": true,
+        "checkSetters": true,
+        "contexts": [
+          "ArrowFunctionExpression",
+          "ClassDeclaration",
+          "ClassExpression",
+          "FunctionDeclaration",
+          "FunctionExpression",
+          "MethodDefinition",
+          "PropertyDefinition",
+          "VariableDeclaration",
+          "TSInterfaceDeclaration",
+          "TSTypeAliasDeclaration",
+          "TSPropertySignature",
+          "TSMethodSignature",
+        ],
+      },
+    ],
+    "jsdoc/require-description-complete-sentence": [
+      0,
+    ],
+    "jsdoc/require-example": [
+      0,
+    ],
+    "jsdoc/require-file-overview": [
+      0,
+    ],
+    "jsdoc/require-hyphen-before-param-description": [
+      2,
+      "always",
+    ],
+    "jsdoc/require-jsdoc": [
+      2,
+      {
+        "checkConstructors": false,
+        "checkGetters": true,
+        "checkSetters": true,
+        "contexts": [
+          "PropertyDefinition",
+          "VariableDeclaration",
+          "TSInterfaceDeclaration",
+          "TSTypeAliasDeclaration",
+          "TSPropertySignature",
+          "TSMethodSignature",
+        ],
+        "enableFixer": true,
+        "exemptEmptyConstructors": false,
+        "exemptEmptyFunctions": false,
+        "fixerMessage": "",
+        "publicOnly": true,
+        "require": {
+          "ArrowFunctionExpression": true,
+          "ClassDeclaration": true,
+          "ClassExpression": true,
+          "FunctionDeclaration": true,
+          "FunctionExpression": true,
+          "MethodDefinition": true,
+        },
+      },
+    ],
+    "jsdoc/require-param": [
+      2,
+      {
+        "autoIncrementBase": 0,
+        "checkConstructors": true,
+        "checkDestructured": true,
+        "checkDestructuredRoots": false,
+        "checkGetters": false,
+        "checkRestProperty": false,
+        "checkSetters": false,
+      },
+    ],
+    "jsdoc/require-param-description": [
+      2,
+    ],
+    "jsdoc/require-param-name": [
+      2,
+    ],
+    "jsdoc/require-param-type": [
+      0,
+    ],
+    "jsdoc/require-property": [
+      2,
+    ],
+    "jsdoc/require-property-description": [
+      2,
+    ],
+    "jsdoc/require-property-name": [
+      2,
+    ],
+    "jsdoc/require-property-type": [
+      0,
+    ],
+    "jsdoc/require-returns": [
+      0,
+    ],
+    "jsdoc/require-returns-check": [
+      2,
+    ],
+    "jsdoc/require-returns-description": [
+      2,
+    ],
+    "jsdoc/require-returns-type": [
+      0,
+    ],
+    "jsdoc/require-throws": [
+      0,
+    ],
+    "jsdoc/require-yields": [
+      2,
+    ],
+    "jsdoc/require-yields-check": [
+      2,
+    ],
+    "jsdoc/sort-tags": [
+      2,
+      {
+        "reportIntraTagGroupSpacing": false,
+      },
+    ],
+    "jsdoc/tag-lines": [
+      2,
+      "always",
+      {
+        "applyToEndTag": false,
+        "startLines": 1,
+      },
+    ],
+    "jsdoc/text-escaping": [
+      0,
+    ],
+    "jsdoc/valid-types": [
+      2,
+    ],
     "jsx-a11y/alt-text": [
       2,
       {

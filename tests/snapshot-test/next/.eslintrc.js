@@ -4,5 +4,6 @@ module.exports = {
     '../../../configs/react',
     '../../../configs/typescript',
     '../../../configs/next',
+    '../../../configs/jsdoc',
   ],
 };
