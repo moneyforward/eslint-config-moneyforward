@@ -25,29 +25,12 @@ module.exports = {
     // https://eslint.org/docs/rules/arrow-parens
     'arrow-parens': ['error', 'always'],
 
-    // require space before/after arrow function's arrow
-    // https://eslint.org/docs/rules/arrow-spacing
-    'arrow-spacing': ['error', { before: true, after: true }],
-
     // verify super() callings in constructors
     'constructor-super': 'error',
-
-    // enforce the spacing around the * in generator functions
-    // https://eslint.org/docs/rules/generator-star-spacing
-    'generator-star-spacing': ['error', { before: false, after: true }],
 
     // disallow modifying variables of class declarations
     // https://eslint.org/docs/rules/no-class-assign
     'no-class-assign': 'error',
-
-    // disallow arrow functions where they could be confused with comparisons
-    // https://eslint.org/docs/rules/no-confusing-arrow
-    'no-confusing-arrow': [
-      'error',
-      {
-        allowParens: true,
-      },
-    ],
 
     // disallow modifying variables that are declared using const
     'no-const-assign': ['error'],
@@ -60,10 +43,6 @@ module.exports = {
     // https://eslint.org/docs/rules/no-duplicate-imports
     // replaced by https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
     'no-duplicate-imports': ['off'],
-
-    // disallow symbol constructor
-    // https://eslint.org/docs/rules/no-new-symbol
-    'no-new-symbol': ['error'],
 
     // Disallow specified names in exports
     // https://eslint.org/docs/rules/no-restricted-exports
@@ -170,10 +149,6 @@ module.exports = {
     // https://eslint.org/docs/rules/prefer-numeric-literals
     'prefer-numeric-literals': ['error'],
 
-    // suggest using Reflect methods where applicable
-    // https://eslint.org/docs/rules/prefer-reflect
-    'prefer-reflect': ['off'],
-
     // use rest parameters instead of arguments
     // https://eslint.org/docs/rules/prefer-rest-params
     'prefer-rest-params': ['error'],
@@ -185,10 +160,6 @@ module.exports = {
     // suggest using template literals instead of string concatenation
     // https://eslint.org/docs/rules/prefer-template
     'prefer-template': ['error'],
-
-    // enforce spacing between object rest-spread
-    // https://eslint.org/docs/rules/rest-spread-spacing
-    'rest-spread-spacing': ['error', 'never'],
 
     // import sorting
     // https://eslint.org/docs/rules/sort-imports
@@ -205,13 +176,5 @@ module.exports = {
     // require a Symbol description
     // https://eslint.org/docs/rules/symbol-description
     'symbol-description': ['error'],
-
-    // enforce usage of spacing in template strings
-    // https://eslint.org/docs/rules/template-curly-spacing
-    'template-curly-spacing': ['error'],
-
-    // enforce spacing around the * in yield* expressions
-    // https://eslint.org/docs/rules/yield-star-spacing
-    'yield-star-spacing': ['error', 'after'],
   },
 };
