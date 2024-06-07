@@ -3,12 +3,6 @@
 exports[`should match ESLint configuration snapshot: storybook 1`] = `
 {
   "rules": {
-    "@babel/object-curly-spacing": [
-      0,
-    ],
-    "@babel/semi": [
-      0,
-    ],
     "@typescript-eslint/adjacent-overload-signatures": [
       2,
     ],
@@ -30,20 +24,8 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "@typescript-eslint/ban-types": [
       2,
     ],
-    "@typescript-eslint/block-spacing": [
-      0,
-    ],
-    "@typescript-eslint/brace-style": [
-      0,
-    ],
     "@typescript-eslint/class-literal-property-style": [
       2,
-    ],
-    "@typescript-eslint/comma-dangle": [
-      0,
-    ],
-    "@typescript-eslint/comma-spacing": [
-      0,
     ],
     "@typescript-eslint/consistent-generic-constructors": [
       2,
@@ -78,24 +60,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
       0,
     ],
     "@typescript-eslint/explicit-module-boundary-types": [
-      0,
-    ],
-    "@typescript-eslint/func-call-spacing": [
-      0,
-    ],
-    "@typescript-eslint/indent": [
-      0,
-    ],
-    "@typescript-eslint/key-spacing": [
-      0,
-    ],
-    "@typescript-eslint/keyword-spacing": [
-      0,
-    ],
-    "@typescript-eslint/lines-around-comment": [
-      0,
-    ],
-    "@typescript-eslint/member-delimiter-style": [
       0,
     ],
     "@typescript-eslint/naming-convention": [
@@ -160,12 +124,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     ],
     "@typescript-eslint/no-extra-non-null-assertion": [
       2,
-    ],
-    "@typescript-eslint/no-extra-parens": [
-      0,
-    ],
-    "@typescript-eslint/no-extra-semi": [
-      0,
     ],
     "@typescript-eslint/no-extraneous-class": [
       2,
@@ -290,9 +248,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "@typescript-eslint/non-nullable-type-assertion-style": [
       0,
     ],
-    "@typescript-eslint/object-curly-spacing": [
-      0,
-    ],
     "@typescript-eslint/only-throw-error": [
       2,
     ],
@@ -338,9 +293,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "@typescript-eslint/prefer-ts-expect-error": [
       2,
     ],
-    "@typescript-eslint/quotes": [
-      0,
-    ],
     "@typescript-eslint/require-await": [
       2,
     ],
@@ -365,26 +317,11 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
         "allowRegExp": false,
       },
     ],
-    "@typescript-eslint/semi": [
-      0,
-    ],
-    "@typescript-eslint/space-before-blocks": [
-      0,
-    ],
-    "@typescript-eslint/space-before-function-paren": [
-      0,
-    ],
-    "@typescript-eslint/space-infix-ops": [
-      0,
-    ],
     "@typescript-eslint/switch-exhaustiveness-check": [
       2,
     ],
     "@typescript-eslint/triple-slash-reference": [
       2,
-    ],
-    "@typescript-eslint/type-annotation-spacing": [
-      0,
     ],
     "@typescript-eslint/unbound-method": [
       2,
@@ -402,23 +339,12 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
       0,
       "consistent",
     ],
-    "array-bracket-spacing": [
-      2,
-      "never",
-    ],
     "array-callback-return": [
       2,
       {
         "allowImplicit": true,
         "allowVoid": false,
         "checkForEach": false,
-      },
-    ],
-    "array-element-newline": [
-      0,
-      {
-        "minItems": 3,
-        "multiline": true,
       },
     ],
     "arrow-body-style": [
@@ -432,35 +358,8 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
       2,
       "always",
     ],
-    "arrow-spacing": [
-      2,
-      {
-        "after": true,
-        "before": true,
-      },
-    ],
-    "babel/object-curly-spacing": [
-      0,
-    ],
-    "babel/quotes": [
-      0,
-    ],
-    "babel/semi": [
-      0,
-    ],
     "block-scoped-var": [
       2,
-    ],
-    "block-spacing": [
-      2,
-      "always",
-    ],
-    "brace-style": [
-      2,
-      "1tbs",
-      {
-        "allowSingleLine": true,
-      },
     ],
     "camelcase": [
       0,
@@ -494,49 +393,9 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
         "exceptMethods": [],
       },
     ],
-    "comma-dangle": [
-      2,
-      {
-        "arrays": "always-multiline",
-        "exports": "always-multiline",
-        "functions": "always-multiline",
-        "imports": "always-multiline",
-        "objects": "always-multiline",
-      },
-    ],
-    "comma-spacing": [
-      2,
-      {
-        "after": true,
-        "before": false,
-      },
-    ],
-    "comma-style": [
-      2,
-      "last",
-      {
-        "exceptions": {
-          "ArrayExpression": false,
-          "ArrayPattern": false,
-          "ArrowFunctionExpression": false,
-          "CallExpression": false,
-          "FunctionDeclaration": false,
-          "FunctionExpression": false,
-          "ImportDeclaration": false,
-          "NewExpression": false,
-          "ObjectExpression": false,
-          "ObjectPattern": false,
-          "VariableDeclaration": false,
-        },
-      },
-    ],
     "complexity": [
       0,
       20,
-    ],
-    "computed-property-spacing": [
-      2,
-      "never",
     ],
     "consistent-return": [
       0,
@@ -560,10 +419,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "default-param-last": [
       2,
     ],
-    "dot-location": [
-      2,
-      "property",
-    ],
     "dot-notation": [
       0,
       {
@@ -574,10 +429,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
         "allowProtectedClassPropertyAccess": false,
       },
     ],
-    "eol-last": [
-      2,
-      "always",
-    ],
     "eqeqeq": [
       2,
       "always",
@@ -585,45 +436,8 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
         "null": "ignore",
       },
     ],
-    "flowtype/boolean-style": [
-      0,
-    ],
-    "flowtype/delimiter-dangle": [
-      0,
-    ],
-    "flowtype/generic-spacing": [
-      0,
-    ],
-    "flowtype/object-type-curly-spacing": [
-      0,
-    ],
-    "flowtype/object-type-delimiter": [
-      0,
-    ],
-    "flowtype/quotes": [
-      0,
-    ],
-    "flowtype/semi": [
-      0,
-    ],
-    "flowtype/space-after-type-colon": [
-      0,
-    ],
-    "flowtype/space-before-generic-bracket": [
-      0,
-    ],
-    "flowtype/space-before-type-colon": [
-      0,
-    ],
-    "flowtype/union-intersection-spacing": [
-      0,
-    ],
     "for-direction": [
       2,
-    ],
-    "func-call-spacing": [
-      2,
-      "never",
     ],
     "func-name-matching": [
       0,
@@ -640,24 +454,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "func-style": [
       0,
       "expression",
-    ],
-    "function-call-argument-newline": [
-      2,
-      "consistent",
-    ],
-    "function-paren-newline": [
-      2,
-      "multiline-arguments",
-    ],
-    "generator-star": [
-      0,
-    ],
-    "generator-star-spacing": [
-      2,
-      {
-        "after": true,
-        "before": false,
-      },
     ],
     "getter-return": [
       0,
@@ -679,10 +475,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     ],
     "id-match": [
       0,
-    ],
-    "implicit-arrow-linebreak": [
-      2,
-      "beside",
     ],
     "import/consistent-type-specifier-style": [
       2,
@@ -892,53 +684,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
       0,
     ],
     "import/unambiguous": [
-      0,
-    ],
-    "indent": [
-      2,
-      2,
-      {
-        "ArrayExpression": 1,
-        "CallExpression": {
-          "arguments": 1,
-        },
-        "FunctionDeclaration": {
-          "body": 1,
-          "parameters": 1,
-        },
-        "FunctionExpression": {
-          "body": 1,
-          "parameters": 1,
-        },
-        "ImportDeclaration": 1,
-        "ObjectExpression": 1,
-        "SwitchCase": 1,
-        "VariableDeclarator": 1,
-        "flatTernaryExpressions": false,
-        "ignoreComments": false,
-        "ignoredNodes": [
-          "JSXElement",
-          "JSXElement > *",
-          "JSXAttribute",
-          "JSXIdentifier",
-          "JSXNamespacedName",
-          "JSXMemberExpression",
-          "JSXSpreadAttribute",
-          "JSXExpressionContainer",
-          "JSXOpeningElement",
-          "JSXClosingElement",
-          "JSXFragment",
-          "JSXOpeningFragment",
-          "JSXClosingFragment",
-          "JSXText",
-          "JSXEmptyExpression",
-          "JSXSpreadChild",
-        ],
-        "offsetTernaryExpressions": false,
-        "outerIIFEBody": 1,
-      },
-    ],
-    "indent-legacy": [
       0,
     ],
     "init-declarations": [
@@ -1210,57 +955,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "jsx-a11y/tabindex-no-positive": [
       2,
     ],
-    "jsx-quotes": [
-      0,
-      "prefer-double",
-    ],
-    "key-spacing": [
-      2,
-      {
-        "afterColon": true,
-        "beforeColon": false,
-      },
-    ],
-    "keyword-spacing": [
-      2,
-      {
-        "after": true,
-        "before": true,
-        "overrides": {
-          "case": {
-            "after": true,
-          },
-          "return": {
-            "after": true,
-          },
-          "throw": {
-            "after": true,
-          },
-        },
-      },
-    ],
-    "line-comment-position": [
-      0,
-      {
-        "applyDefaultPatterns": true,
-        "ignorePattern": "",
-        "position": "above",
-      },
-    ],
-    "linebreak-style": [
-      2,
-      "unix",
-    ],
-    "lines-around-comment": [
-      0,
-    ],
-    "lines-around-directive": [
-      2,
-      {
-        "after": "always",
-        "before": "always",
-      },
-    ],
     "logical-assignment-operators": [
       0,
       "always",
@@ -1275,18 +969,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "max-depth": [
       0,
       4,
-    ],
-    "max-len": [
-      2,
-      100,
-      2,
-      {
-        "ignoreComments": false,
-        "ignoreRegExpLiterals": true,
-        "ignoreStrings": true,
-        "ignoreTemplateLiterals": true,
-        "ignoreUrls": true,
-      },
     ],
     "max-lines": [
       0,
@@ -1322,71 +1004,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
         "max": 1,
       },
     ],
-    "multiline-comment-style": [
-      0,
-      "starred-block",
-    ],
-    "multiline-ternary": [
-      0,
-      "never",
-    ],
-    "n/global-require": [
-      2,
-    ],
-    "n/hashbang": [
-      2,
-    ],
-    "n/no-deprecated-api": [
-      2,
-    ],
-    "n/no-exports-assign": [
-      2,
-    ],
-    "n/no-extraneous-import": [
-      2,
-    ],
-    "n/no-extraneous-require": [
-      2,
-    ],
-    "n/no-missing-import": [
-      2,
-    ],
-    "n/no-missing-require": [
-      2,
-    ],
-    "n/no-new-require": [
-      2,
-    ],
-    "n/no-path-concat": [
-      2,
-    ],
-    "n/no-process-exit": [
-      2,
-    ],
-    "n/no-unpublished-bin": [
-      2,
-    ],
-    "n/no-unpublished-import": [
-      2,
-    ],
-    "n/no-unpublished-require": [
-      2,
-    ],
-    "n/no-unsupported-features/es-builtins": [
-      2,
-    ],
-    "n/no-unsupported-features/es-syntax": [
-      2,
-      {
-        "ignores": [],
-      },
-    ],
-    "n/no-unsupported-features/node-builtins": [
-      2,
-    ],
-    "n/process-exit-as-throw": [
-      2,
-    ],
     "new-cap": [
       2,
       {
@@ -1401,28 +1018,10 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
         "properties": true,
       },
     ],
-    "new-parens": [
-      2,
-    ],
-    "newline-after-var": [
-      0,
-    ],
-    "newline-before-return": [
-      0,
-    ],
-    "newline-per-chained-call": [
-      2,
-      {
-        "ignoreChainWithDepth": 4,
-      },
-    ],
     "no-alert": [
       2,
     ],
     "no-array-constructor": [
-      0,
-    ],
-    "no-arrow-condition": [
       0,
     ],
     "no-async-promise-executor": [
@@ -1437,14 +1036,8 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "no-caller": [
       2,
     ],
-    "no-catch-shadow": [
-      0,
-    ],
     "no-class-assign": [
       2,
-    ],
-    "no-comma-dangle": [
-      0,
     ],
     "no-compare-neg-zero": [
       2,
@@ -1452,13 +1045,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "no-cond-assign": [
       2,
       "always",
-    ],
-    "no-confusing-arrow": [
-      2,
-      {
-        "allowParens": true,
-        "onlyOneSimpleParam": false,
-      },
     ],
     "no-console": [
       1,
@@ -1567,24 +1153,7 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "no-extra-label": [
       2,
     ],
-    "no-extra-parens": [
-      0,
-      "all",
-      {
-        "conditionalAssign": true,
-        "enforceForArrowConditionals": false,
-        "ignoreJSX": "all",
-        "nestedBinaryExpressions": false,
-        "returnAssign": false,
-      },
-    ],
-    "no-extra-semi": [
-      2,
-    ],
     "no-fallthrough": [
-      2,
-    ],
-    "no-floating-decimal": [
       2,
     ],
     "no-func-assign": [
@@ -1667,80 +1236,11 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "no-misleading-character-class": [
       2,
     ],
-    "no-mixed-operators": [
-      2,
-      {
-        "allowSamePrecedence": false,
-        "groups": [
-          [
-            "%",
-            "**",
-          ],
-          [
-            "%",
-            "+",
-          ],
-          [
-            "%",
-            "-",
-          ],
-          [
-            "%",
-            "*",
-          ],
-          [
-            "%",
-            "/",
-          ],
-          [
-            "/",
-            "*",
-          ],
-          [
-            "&",
-            "|",
-            "<<",
-            ">>",
-            ">>>",
-          ],
-          [
-            "==",
-            "!=",
-            "===",
-            "!==",
-          ],
-          [
-            "&&",
-            "||",
-          ],
-        ],
-      },
-    ],
-    "no-mixed-spaces-and-tabs": [
-      2,
-    ],
     "no-multi-assign": [
       2,
     ],
-    "no-multi-spaces": [
-      2,
-      {
-        "ignoreEOLComments": false,
-      },
-    ],
     "no-multi-str": [
       2,
-    ],
-    "no-multiple-empty-lines": [
-      2,
-      {
-        "max": 1,
-        "maxBOF": 0,
-        "maxEOF": 0,
-      },
-    ],
-    "no-native-reassign": [
-      0,
     ],
     "no-negated-condition": [
       0,
@@ -1756,9 +1256,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     ],
     "no-new-native-nonconstructor": [
       0,
-    ],
-    "no-new-object": [
-      2,
     ],
     "no-new-symbol": [
       0,
@@ -1820,9 +1317,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     ],
     "no-regex-spaces": [
       2,
-    ],
-    "no-reserved-keys": [
-      0,
     ],
     "no-restricted-exports": [
       2,
@@ -2152,9 +1646,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
       2,
       "always",
     ],
-    "no-return-await": [
-      2,
-    ],
     "no-script-url": [
       2,
     ],
@@ -2179,16 +1670,7 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "no-shadow-restricted-names": [
       2,
     ],
-    "no-space-before-semi": [
-      0,
-    ],
-    "no-spaced-func": [
-      0,
-    ],
     "no-sparse-arrays": [
-      2,
-    ],
-    "no-tabs": [
       2,
     ],
     "no-template-curly-in-string": [
@@ -2202,13 +1684,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     ],
     "no-throw-literal": [
       0,
-    ],
-    "no-trailing-spaces": [
-      2,
-      {
-        "ignoreComments": false,
-        "skipBlankLines": false,
-      },
     ],
     "no-undef": [
       0,
@@ -2341,57 +1816,8 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
         ],
       },
     ],
-    "no-whitespace-before-property": [
-      2,
-    ],
     "no-with": [
       2,
-    ],
-    "no-wrap-func": [
-      0,
-    ],
-    "nonblock-statement-body-position": [
-      2,
-      "beside",
-      {
-        "overrides": {},
-      },
-    ],
-    "object-curly-newline": [
-      2,
-      {
-        "ExportDeclaration": {
-          "consistent": true,
-          "minProperties": 4,
-          "multiline": true,
-        },
-        "ImportDeclaration": {
-          "consistent": true,
-          "minProperties": 4,
-          "multiline": true,
-        },
-        "ObjectExpression": {
-          "consistent": true,
-          "minProperties": 4,
-          "multiline": true,
-        },
-        "ObjectPattern": {
-          "consistent": true,
-          "minProperties": 4,
-          "multiline": true,
-        },
-      },
-    ],
-    "object-curly-spacing": [
-      2,
-      "always",
-    ],
-    "object-property-newline": [
-      2,
-      {
-        "allowAllPropertiesOnSameLine": true,
-        "allowMultiplePropertiesPerLine": false,
-      },
     ],
     "object-shorthand": [
       2,
@@ -2405,36 +1831,9 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
       2,
       "never",
     ],
-    "one-var-declaration-per-line": [
-      2,
-      "always",
-    ],
     "operator-assignment": [
       2,
       "always",
-    ],
-    "operator-linebreak": [
-      2,
-      "before",
-      {
-        "overrides": {
-          "=": "none",
-        },
-      },
-    ],
-    "padded-blocks": [
-      2,
-      {
-        "blocks": "never",
-        "classes": "never",
-        "switches": "never",
-      },
-      {
-        "allowSingleLineBlocks": true,
-      },
-    ],
-    "padding-line-between-statements": [
-      0,
     ],
     "prefer-arrow-callback": [
       2,
@@ -2486,9 +1885,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
       {
         "allowEmptyReject": true,
       },
-    ],
-    "prefer-reflect": [
-      0,
     ],
     "prefer-regex-literals": [
       2,
@@ -2543,22 +1939,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     ],
     "promise/valid-params": [
       1,
-    ],
-    "quote-props": [
-      2,
-      "as-needed",
-      {
-        "keywords": false,
-        "numbers": false,
-        "unnecessary": true,
-      },
-    ],
-    "quotes": [
-      2,
-      "single",
-      {
-        "avoidEscape": true,
-      },
     ],
     "radix": [
       2,
@@ -2722,9 +2102,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
         "when": "multiline",
       },
     ],
-    "react/jsx-newline": [
-      0,
-    ],
     "react/jsx-no-bind": [
       2,
       {
@@ -2810,9 +2187,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
         "reservedFirst": true,
         "shorthandFirst": true,
       },
-    ],
-    "react/jsx-space-before-closing": [
-      0,
     ],
     "react/jsx-tag-spacing": [
       2,
@@ -3034,25 +2408,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "require-unicode-regexp": [
       0,
     ],
-    "rest-spread-spacing": [
-      2,
-      "never",
-    ],
-    "semi": [
-      2,
-      "always",
-    ],
-    "semi-spacing": [
-      2,
-      {
-        "after": true,
-        "before": false,
-      },
-    ],
-    "semi-style": [
-      2,
-      "last",
-    ],
     "sort-imports": [
       0,
       {
@@ -3076,92 +2431,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
       },
     ],
     "sort-vars": [
-      0,
-    ],
-    "space-after-function-name": [
-      0,
-    ],
-    "space-after-keywords": [
-      0,
-    ],
-    "space-before-blocks": [
-      2,
-    ],
-    "space-before-function-paren": [
-      2,
-      {
-        "anonymous": "always",
-        "asyncArrow": "always",
-        "named": "never",
-      },
-    ],
-    "space-before-function-parentheses": [
-      0,
-    ],
-    "space-before-keywords": [
-      0,
-    ],
-    "space-in-brackets": [
-      0,
-    ],
-    "space-in-parens": [
-      2,
-      "never",
-    ],
-    "space-infix-ops": [
-      2,
-    ],
-    "space-return-throw-case": [
-      0,
-    ],
-    "space-unary-ops": [
-      2,
-      {
-        "nonwords": false,
-        "overrides": {},
-        "words": true,
-      },
-    ],
-    "space-unary-word-ops": [
-      0,
-    ],
-    "spaced-comment": [
-      2,
-      "always",
-      {
-        "block": {
-          "balanced": true,
-          "exceptions": [
-            "-",
-            "+",
-          ],
-          "markers": [
-            "=",
-            "!",
-            ":",
-            "::",
-          ],
-        },
-        "line": {
-          "exceptions": [
-            "-",
-            "+",
-          ],
-          "markers": [
-            "=",
-            "!",
-            "/",
-          ],
-        },
-      },
-    ],
-    "standard/array-bracket-even-spacing": [
-      0,
-    ],
-    "standard/computed-property-even-spacing": [
-      0,
-    ],
-    "standard/object-curly-even-spacing": [
       0,
     ],
     "storybook/await-interactions": [
@@ -3197,38 +2466,12 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "storybook/use-storybook-testing-library": [
       2,
     ],
-    "switch-colon-spacing": [
-      2,
-      {
-        "after": true,
-        "before": false,
-      },
-    ],
     "symbol-description": [
       2,
-    ],
-    "template-curly-spacing": [
-      2,
-    ],
-    "template-tag-spacing": [
-      2,
-      "never",
     ],
     "unicode-bom": [
       2,
       "never",
-    ],
-    "unicorn/empty-brace-spaces": [
-      0,
-    ],
-    "unicorn/no-nested-ternary": [
-      0,
-    ],
-    "unicorn/number-literal-case": [
-      0,
-    ],
-    "unicorn/template-indent": [
-      0,
     ],
     "use-isnan": [
       2,
@@ -3241,137 +2484,6 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     ],
     "vars-on-top": [
       2,
-    ],
-    "vue/array-bracket-newline": [
-      0,
-    ],
-    "vue/array-bracket-spacing": [
-      0,
-    ],
-    "vue/array-element-newline": [
-      0,
-    ],
-    "vue/arrow-spacing": [
-      0,
-    ],
-    "vue/block-spacing": [
-      0,
-    ],
-    "vue/block-tag-newline": [
-      0,
-    ],
-    "vue/brace-style": [
-      0,
-    ],
-    "vue/comma-dangle": [
-      0,
-    ],
-    "vue/comma-spacing": [
-      0,
-    ],
-    "vue/comma-style": [
-      0,
-    ],
-    "vue/dot-location": [
-      0,
-    ],
-    "vue/func-call-spacing": [
-      0,
-    ],
-    "vue/html-closing-bracket-newline": [
-      0,
-    ],
-    "vue/html-closing-bracket-spacing": [
-      0,
-    ],
-    "vue/html-end-tags": [
-      0,
-    ],
-    "vue/html-indent": [
-      0,
-    ],
-    "vue/html-quotes": [
-      0,
-    ],
-    "vue/html-self-closing": [
-      0,
-    ],
-    "vue/key-spacing": [
-      0,
-    ],
-    "vue/keyword-spacing": [
-      0,
-    ],
-    "vue/max-attributes-per-line": [
-      0,
-    ],
-    "vue/max-len": [
-      0,
-    ],
-    "vue/multiline-html-element-content-newline": [
-      0,
-    ],
-    "vue/multiline-ternary": [
-      0,
-    ],
-    "vue/mustache-interpolation-spacing": [
-      0,
-    ],
-    "vue/no-extra-parens": [
-      0,
-    ],
-    "vue/no-multi-spaces": [
-      0,
-    ],
-    "vue/no-spaces-around-equal-signs-in-attribute": [
-      0,
-    ],
-    "vue/object-curly-newline": [
-      0,
-    ],
-    "vue/object-curly-spacing": [
-      0,
-    ],
-    "vue/object-property-newline": [
-      0,
-    ],
-    "vue/operator-linebreak": [
-      0,
-    ],
-    "vue/quote-props": [
-      0,
-    ],
-    "vue/script-indent": [
-      0,
-    ],
-    "vue/singleline-html-element-content-newline": [
-      0,
-    ],
-    "vue/space-in-parens": [
-      0,
-    ],
-    "vue/space-infix-ops": [
-      0,
-    ],
-    "vue/space-unary-ops": [
-      0,
-    ],
-    "vue/template-curly-spacing": [
-      0,
-    ],
-    "wrap-iife": [
-      2,
-      "outside",
-      {
-        "functionPrototypeMethods": false,
-      },
-    ],
-    "wrap-regex": [
-      0,
-    ],
-    "yield-star-spacing": [
-      2,
-      "after",
     ],
     "yoda": [
       2,
@@ -3388,14 +2500,27 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
       "node_modules",
       "\\.(coffee|scss|css|less|hbs|svg|json|jpg|jpeg|png|webp)$",
     ],
+    "import/parsers": {
+      "espree": [
+        ".js",
+        ".mjs",
+        ".jsx",
+        "ts",
+        "mts",
+        "tsx",
+      ],
+    },
     "import/resolver": {
       "node": {
         "extensions": [
           ".js",
           ".mjs",
           ".json",
+          "ts",
+          "mts",
         ],
       },
+      "typescript": {},
     },
     "react": {
       "version": "detect",
