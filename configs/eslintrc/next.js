@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['../rules/next'],
+  extends: ['../../rules/next'],
 };

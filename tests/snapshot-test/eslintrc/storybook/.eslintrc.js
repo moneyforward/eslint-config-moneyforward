@@ -1,9 +1,9 @@
 module.exports = {
   root: true,
   extends: [
-    '../../../configs/essentials',
-    '../../../configs/react',
-    '../../../configs/typescript',
-    '../../../configs/storybook',
+    '../../../../configs/eslintrc/essentials',
+    '../../../../configs/eslintrc/react',
+    '../../../../configs/eslintrc/typescript',
+    '../../../../configs/eslintrc/storybook',
   ],
 };

@@ -1,10 +1,10 @@
 module.exports = {
   root: true,
   extends: [
-    '../../../configs/essentials',
-    '../../../configs/react',
-    '../../../configs/typescript',
-    '../../../configs/next',
-    '../../../configs/jsdoc',
+    '../../../../configs/eslintrc/essentials',
+    '../../../../configs/eslintrc/react',
+    '../../../../configs/eslintrc/typescript',
+    '../../../../configs/eslintrc/next',
+    '../../../../configs/eslintrc/jsdoc',
   ],
 };

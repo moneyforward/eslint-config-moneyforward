@@ -1,4 +1,7 @@
 module.exports = {
   root: true,
-  extends: ['../../../configs/essentials', '../../../configs/node'],
+  extends: [
+    '../../../../configs/eslintrc/essentials',
+    '../../../../configs/eslintrc/node',
+  ],
 };

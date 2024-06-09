@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['../rules/node'],
+  extends: ['../../rules/node'],
   env: {
     node: true,
   },
