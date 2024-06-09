@@ -3,8 +3,8 @@
 const { readdirSync } = require('fs');
 const { resolve, join } = require('path');
 
-test('parsable all configs', () => {
-  const dir = resolve(join(__dirname, '../configs'));
+test('parsable all eslintrc format configs', () => {
+  const dir = resolve(join(__dirname, '../configs/eslintrc'));
 
   const files = readdirSync(dir, {
     withFileTypes: true,
