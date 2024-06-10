@@ -33,15 +33,6 @@ const promiseRuleSet = {
 };
 
 export default [
-  {
-    languageOptions: {
-      parserOptions: {
-        ecmaVersion: 2023,
-        sourceType: 'module',
-      },
-    },
-  },
-
   bestPracticesRuleSet,
   errorsRuleSet,
   es6RuleSet,
