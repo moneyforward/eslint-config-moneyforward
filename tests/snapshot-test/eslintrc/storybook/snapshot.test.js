@@ -1,4 +1,4 @@
-const { getESLintConfig, optimizeRules } = require('../helper');
+const { getESLintConfig, optimizeRules } = require('../../helper');
 
 test('should match ESLint configuration snapshot: storybook', async () => {
   const filePath = 'dummy.stories.tsx';

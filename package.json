@@ -3,14 +3,14 @@
   "version": "3.0.0",
   "description": "Money Forward's ESLint rules as an extensible shared config.",
   "exports": {
-    "./essentials": "./configs/essentials.js",
-    "./jsdoc": "./configs/jsdoc.js",
-    "./next": "./configs/next.js",
-    "./node": "./configs/node.js",
-    "./react": "./configs/react.js",
-    "./storybook": "./configs/storybook.js",
-    "./test/*": "./configs/test/*.js",
-    "./typescript": "./configs/typescript.js"
+    "./essentials": "./configs/eslintrc/essentials.js",
+    "./jsdoc": "./configs/eslintrc/jsdoc.js",
+    "./next": "./configs/eslintrc/next.js",
+    "./node": "./configs/eslintrc/node.js",
+    "./react": "./configs/eslintrc/react.js",
+    "./storybook": "./configs/eslintrc/storybook.js",
+    "./test/*": "./configs/eslintrc/test/*.js",
+    "./typescript": "./configs/eslintrc/typescript.js"
   },
   "engines": {
     "node": ">= 18.18.0 || >= 20.0.0"
