@@ -15,6 +15,57 @@ npm install --save-dev eslint-config-moneyforward eslint
 
 ### 2. Configure ESLint
 
+#### 2a. for Flat Config
+
+Within your ESLint config file (`eslint.config.js`):
+
+```js
+import { essentials } from 'eslint-config-moneyforward/flat';
+
+export default [...essentials];
+```
+
+If you need TypeScript Support:
+
+```diff
+-import { essentials } from 'eslint-config-moneyforward/flat';
++import { essentials, typescript } from 'eslint-config-moneyforward/flat';
+
+ export default [
+   ...essentials,
++  ...typescript,
+ ];
+```
+
+Must be added after `essentials`.
+
+We also provide various other rule sets that you can configure to suit your project.
+
+```js
+import {
+  essentials,
+  jsdoc,
+  node,
+  react,
+  storybook,
+  test,
+  typescript,
+} from 'eslint-config-moneyforward/flat';
+
+export default [
+  ...essentials,
+  ...jsdoc,
+  ...next,
+  ...node,
+  ...react,
+  ...storybook,
+  ...test.react,
+  ...typescript,
+];
+```
+
+#### 2b. for eslintrc format
+
 Within your ESLint config file:
 
 ```json
@@ -79,6 +130,21 @@ npm install --save-dev eslint-config-prettier
 Within your ESLint config file:
 
 ```diff
+// eslint.config.js
+
+ import { essentials, react } from 'eslint-config-moneyforward/flat';
++import prettier from 'eslint-config-prettier';
+
+ export default [
+   ...essentials,
+   ...react,
++  prettier,
+ ],
+```
+
+```diff
+// .eslintrc.js
+
 {
   "extends": [
     "moneyforward/essentials",
@@ -88,7 +154,7 @@ Within your ESLint config file:
 }
 ```
 
-By adding the `prettier` configuration to `extends` in the ESLint configuration, you can disable all rules in `moneyforward/essentials` that conflict with Prettier.
+By adding the `prettier` configuration to `extends` in the ESLint configuration, you can disable all rules in `...essentials` (or `moneyforward/essentials`) that conflict with Prettier.
 
 ## Migrate from an existing configuration
 
