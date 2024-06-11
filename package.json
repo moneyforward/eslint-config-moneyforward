@@ -3,6 +3,9 @@
   "version": "3.0.0",
   "description": "Money Forward's ESLint rules as an extensible shared config.",
   "exports": {
+    "./flat": {
+      "import": "./configs/flat/index.mjs"
+    },
     "./essentials": "./configs/eslintrc/essentials.js",
     "./jsdoc": "./configs/eslintrc/jsdoc.js",
     "./next": "./configs/eslintrc/next.js",
@@ -22,7 +25,7 @@
   "scripts": {
     "lint": "eslint && prettier --check .",
     "lint:fix": "eslint --fix && prettier --write .",
-    "test": "jest",
+    "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" jest",
     "release": "semantic-release"
   },
   "repository": {
@@ -60,6 +63,7 @@
     "eslint-config-prettier": "9.1.0",
     "jest": "29.7.0",
     "prettier": "3.2.5",
+    "prettier-plugin-organize-imports": "3.2.4",
     "semantic-release": "23.1.1",
     "typescript": "5.4.5"
   },
