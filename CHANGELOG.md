@@ -1,3 +1,37 @@
+# [4.0.0](https://github.com/moneyforward/eslint-config-moneyforward/compare/3.0.0...4.0.0) (2024-06-20)
+
+
+### Bug Fixes
+
+* `import/namespace` error ([#294](https://github.com/moneyforward/eslint-config-moneyforward/issues/294)) ([a512fed](https://github.com/moneyforward/eslint-config-moneyforward/commit/a512fed22dda839f68b88a25c1eaf933276cbd2c))
+* Allow import of devDependency modules in Storybook files ([#279](https://github.com/moneyforward/eslint-config-moneyforward/issues/279)) ([1503dbe](https://github.com/moneyforward/eslint-config-moneyforward/commit/1503dbee0670d37e624a80aa9c9997419d33b7dc))
+* Resolve the problem of incorrect recognition of alias path by TypeScript's Compiler Options ([#293](https://github.com/moneyforward/eslint-config-moneyforward/issues/293)) ([39c4f0a](https://github.com/moneyforward/eslint-config-moneyforward/commit/39c4f0a46bb24aff861e2f847f0ff4340ae728b9))
+* Specify `jest` as a Peer Dependency ([#298](https://github.com/moneyforward/eslint-config-moneyforward/issues/298)) ([4f750da](https://github.com/moneyforward/eslint-config-moneyforward/commit/4f750da0ab579d23b6f06a3806ee1842cdc97f76))
+
+
+### Features
+
+* Implement the Flat Config ([#300](https://github.com/moneyforward/eslint-config-moneyforward/issues/300)) ([0a16caf](https://github.com/moneyforward/eslint-config-moneyforward/commit/0a16caf9deb3244759b1e5bd2d3683640fda3b9e))
+* Remove deprecated rule settings ([#295](https://github.com/moneyforward/eslint-config-moneyforward/issues/295)) ([b264582](https://github.com/moneyforward/eslint-config-moneyforward/commit/b2645822eb2807082d3392cc74897ace9223a69a))
+* Update ESLint version requirement ([#272](https://github.com/moneyforward/eslint-config-moneyforward/issues/272)) ([e2e952a](https://github.com/moneyforward/eslint-config-moneyforward/commit/e2e952a92548bc62da8e89ac0b5b6ace8797b222))
+* Update eslint-plugin-jest version ([#275](https://github.com/moneyforward/eslint-config-moneyforward/issues/275)) ([9f31624](https://github.com/moneyforward/eslint-config-moneyforward/commit/9f31624ae7ad683bd74a30c6745a5ed79c6665ff))
+* Update eslint-plugin-n version ([#274](https://github.com/moneyforward/eslint-config-moneyforward/issues/274)) ([5e5ce78](https://github.com/moneyforward/eslint-config-moneyforward/commit/5e5ce788ae315fcb6d71ab44d232d32c4ef02e33))
+* Update eslint-plugin-testing-library version ([#277](https://github.com/moneyforward/eslint-config-moneyforward/issues/277)) ([9d23602](https://github.com/moneyforward/eslint-config-moneyforward/commit/9d236024d5878a69aad87c08a5a30a96a87fd8ed))
+* Update Node.js version requirement ([#271](https://github.com/moneyforward/eslint-config-moneyforward/issues/271)) ([44d7fe3](https://github.com/moneyforward/eslint-config-moneyforward/commit/44d7fe3b37aa0842d1c886540f6b78a0f2a3b729))
+* Update typescript-eslint version ([#273](https://github.com/moneyforward/eslint-config-moneyforward/issues/273)) ([64042cb](https://github.com/moneyforward/eslint-config-moneyforward/commit/64042cb3b4cdf5e2ef1b0a7f12c95ef29777a87f))
+
+
+### BREAKING CHANGES
+
+* [Update eslint-plugin-testing-library version to 6 higher](https://github.com/testing-library/eslint-plugin-testing-library/releases/tag/v6.0.0)
+* Update the TypeScript peer dependency requirement to `>= 4.7.5 || ^5.0.0`. This means we are dropping support for TypeScript 4 versions prior to `4.7.5`.
+
+* fix version
+* Update the ESLint peer dependency requirement to `^8.56.0`. This means we are dropping support for ESLint 8 versions prior to `8.56.0`.
+
+* chore: specify eslint version in ci only v8
+* Update Node.js engine requirement to `>= 18.18.0 || >= 20.0.0`. This means we are dropping support for Node 18 versions prior to `18.18.0`.
+
 # [3.0.0](https://github.com/moneyforward/eslint-config-moneyforward/compare/2.0.0...3.0.0) (2024-04-18)
 
 
