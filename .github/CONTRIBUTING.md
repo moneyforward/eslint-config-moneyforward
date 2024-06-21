@@ -6,7 +6,7 @@ I appreciate your considering contributing `eslint-config-moneyforward`. This do
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org) (See [`.node-version`](/moneyforward/eslint-config-moneyforward/.node-version))
+- [Node.js](https://nodejs.org) (See [`.node-version`](/.node-version))
 
 ### Installation
 
@@ -34,12 +34,12 @@ The main scripts used during development are:
 
 ### Reporting Issues
 
-1. Check [the Issue Tracker](moneyforward/eslint-config-moneyforward/issues) for existing issues.
-2. When requesting a new issue or feature, please use [the templates](/moneyforward/eslint-config-moneyforward/issues/new/choose) and provide as much detail as possible.
+1. Check [the Issue Tracker](https://github.com/moneyforward/eslint-config-moneyforward/issues) for existing issues.
+2. When requesting a new issue or feature, please use [the templates](https://github.com/moneyforward/eslint-config-moneyforward/issues/new/choose) and provide as much detail as possible.
 
 ### Development
 
-1. Check [the Issue Tracker](moneyforward/eslint-config-moneyforward/issues), make sure if there is anything relevant to the problem you are trying to solve.
+1. Check [the Issue Tracker](https://github.com/moneyforward/eslint-config-moneyforward/issues), make sure if there is anything relevant to the problem you are trying to solve.
 2. Keep the repository you did folk up to date.
 
    ```bash
@@ -74,7 +74,7 @@ The main scripts used during development are:
 
 ### Code Style
 
-- Code according to [ESlint](/moneyforward/eslint-config-moneyforward/.eslintrc.js) and Prettier rules.
+- Code according to [ESlint](/.eslintrc.js) and [Prettier](/.prettierrc.js) rules.
 - Keep your code in a consistent style.
 
 ### Testing
@@ -103,4 +103,4 @@ The main scripts used during development are:
 
 ## License
 
-This project is based on [MIT License](/moneyforward/eslint-config-moneyforward/LICENSE).
+This project is based on [MIT License](/LICENSE).
