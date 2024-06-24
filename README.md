@@ -45,6 +45,7 @@ We also provide various other rule sets that you can configure to suit your proj
 import {
   essentials,
   jsdoc,
+  next,
   node,
   react,
   storybook,
