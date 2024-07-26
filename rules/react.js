@@ -96,7 +96,13 @@ module.exports = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md
     'react/jsx-pascal-case': ['error', { allowAllCaps: true }],
 
-    // Enforce props alphabetical sorting
+    // Enforce props sorting
+    // The order of props is as follows:
+    //   1. React reserved props: e.g. key, ref
+    //   2. Shorthand props: e.g. disabled
+    //   3. Others
+    //   4. Callbacks e.g. onClick
+    // The props will no be sorted alphabetically.
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
     'react/jsx-sort-props': [
       'error',
