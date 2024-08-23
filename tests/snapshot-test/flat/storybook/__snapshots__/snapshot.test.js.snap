@@ -2570,11 +2570,9 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
     "import/parsers": {
       "espree": [
         ".js",
+        "cjs",
         ".mjs",
         ".jsx",
-        ".ts",
-        ".mts",
-        ".tsx",
       ],
     },
     "import/resolver": {
@@ -2582,9 +2580,10 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
         "extensions": [
           ".js",
           ".mjs",
-          ".json",
+          ".jsx",
           ".ts",
           ".mts",
+          ".tsx",
         ],
       },
       "typescript": {},
