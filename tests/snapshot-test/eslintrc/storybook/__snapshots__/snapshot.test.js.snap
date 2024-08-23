@@ -2495,6 +2495,9 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
       ".js",
       ".mjs",
       ".jsx",
+      ".ts",
+      ".mts",
+      ".tsx",
     ],
     "import/ignore": [
       "node_modules",
@@ -2503,11 +2506,9 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "import/parsers": {
       "espree": [
         ".js",
+        "cjs",
         ".mjs",
         ".jsx",
-        "ts",
-        "mts",
-        "tsx",
       ],
     },
     "import/resolver": {
@@ -2515,9 +2516,10 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
         "extensions": [
           ".js",
           ".mjs",
-          ".json",
-          "ts",
-          "mts",
+          ".jsx",
+          ".ts",
+          ".mts",
+          ".tsx",
         ],
       },
       "typescript": {},
