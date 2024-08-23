@@ -1,3 +1,15 @@
+# [4.1.0](https://github.com/moneyforward/eslint-config-moneyforward/compare/4.0.0...4.1.0) (2024-08-23)
+
+
+### Bug Fixes
+
+* extensions list into `settings` field of `import` rules ([#314](https://github.com/moneyforward/eslint-config-moneyforward/issues/314)) ([120b2e6](https://github.com/moneyforward/eslint-config-moneyforward/commit/120b2e69882c8096a79d01d4d3764ba1e4650614))
+
+
+### Features
+
+* Add `languageOptions.parserOptions` option into `essentials` of flat config  ([#313](https://github.com/moneyforward/eslint-config-moneyforward/issues/313)) ([c685d48](https://github.com/moneyforward/eslint-config-moneyforward/commit/c685d48d0de23258ec6211cc753abdf0fda17622))
+
 # [4.0.0](https://github.com/moneyforward/eslint-config-moneyforward/compare/3.0.0...4.0.0) (2024-06-20)
 
 
