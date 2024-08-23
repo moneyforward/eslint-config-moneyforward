@@ -1,4 +1,5 @@
 // @ts-check
+import globals from 'globals';
 // @ts-ignore
 import importPlugin from 'eslint-plugin-import';
 import promisePlugin from 'eslint-plugin-promise';
@@ -33,6 +34,16 @@ const promiseRuleSet = {
 };
 
 export default [
+  {
+    languageOptions: {
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+      },
+      globals: globals.builtin,
+    },
+  },
+
   bestPracticesRuleSet,
   errorsRuleSet,
   es6RuleSet,
