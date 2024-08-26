@@ -26,6 +26,13 @@ export default [
       },
     },
 
+    settings: {
+      // https://github.com/import-js/eslint-plugin-import?tab=readme-ov-file#importparsers
+      'import/parsers': {
+        '@typescript-eslint/parser': ['.ts', '.tsx', '.cts', '.mts'],
+      },
+    },
+
     ...typescriptRuleSet,
   },
 ];
