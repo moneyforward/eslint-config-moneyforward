@@ -72,6 +72,11 @@ The main scripts used during development are:
   - `chore`: other changes that don't modify src or test files.
   - `revert`: reverts a previous commit.
 
+> [!NOTE]
+> If there is a single commit in the pull request, the commit message must be the same as a pull request title. Because the merge strategy in this repository is "Squash and merge". When "Squash and merge" a branch in a pull request, the commit message will be the pull request has a only single commit, the default message is the commit message of it.
+>
+> cf. [About pull request merges - GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#merge-message-for-a-squash-merge)
+
 ### Code Style
 
 - Code according to [ESlint](/.eslintrc.js) and [Prettier](/.prettierrc.js) rules.
