@@ -180,4 +180,4 @@ npm uninstall eslint-plugin-promise eslint-plugin-import \
 
 ## License
 
-Open source [licensed as MIT](https://github.com/iamturns/eslint-config-airbnb-typescript/blob/master/LICENSE).
+Open source [licensed as MIT](https://github.com/moneyforward/eslint-config-moneyforward/blob/main/LICENSE).
