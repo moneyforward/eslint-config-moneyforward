@@ -73,7 +73,7 @@ The main scripts used during development are:
   - `revert`: reverts a previous commit.
 
 > [!NOTE]
-> If there is a single commit in the pull request, the commit message must be the same as a pull request title. Because the merge strategy in this repository is "Squash and merge". When "Squash and merge" a branch in a pull request, the commit message will be the pull request has a only single commit, the default message is the commit message of it.
+> If there is a single commit in the pull request, the commit message must be the same as a pull request title. Because the merge strategy in this repository is "Squash and merge". When you "Squash and merge" a pull request on a branch that has only one commit, the default commit message will be the commit message in that branch.
 >
 > cf. [About pull request merges - GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#merge-message-for-a-squash-merge)
 
