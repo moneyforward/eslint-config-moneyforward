@@ -1,3 +1,5 @@
+## [4.1.2](https://github.com/moneyforward/eslint-config-moneyforward/compare/4.1.1...4.1.2) (2024-08-29)
+
 ## [4.1.1](https://github.com/moneyforward/eslint-config-moneyforward/compare/4.1.0...4.1.1) (2024-08-26)
 
 
