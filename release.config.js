@@ -2,7 +2,6 @@
  * @type {import('semantic-release').GlobalConfig}
  */
 module.exports = {
-  branches: ['main'],
   plugins: [
     [
       '@semantic-release/commit-analyzer',
@@ -26,9 +25,6 @@ module.exports = {
       '@semantic-release/git',
       {
         assets: ['CHANGELOG.md', 'package.json', 'package-lock.json'],
-        message:
-          // eslint-disable-next-line no-template-curly-in-string
-          'chore(release): ${nextRelease.version} \n\n${nextRelease.notes}',
       },
     ],
     '@semantic-release/github',
