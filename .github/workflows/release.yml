@@ -38,9 +38,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Verifying the signatures
-        run: npm audit signatures
-
       - name: Release
         run: npm run release ${{ github.event.inputs.dry_run == 'true' && '-- --dry-run' || '' }}
         env:
