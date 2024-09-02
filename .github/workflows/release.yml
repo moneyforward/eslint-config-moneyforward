@@ -2,6 +2,11 @@ name: Release
 
 on:
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: dry-run
+        required: true
+        type: boolean
 
 permissions:
   contents: write
@@ -34,7 +39,7 @@ jobs:
         run: npm install
 
       - name: Release
-        run: npm run release
+        run: npm run release ${{ github.event.inputs.dry_run == 'true' && '-- --dry-run' || '' }}
         env:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
