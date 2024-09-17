@@ -178,6 +178,10 @@ npm uninstall eslint-plugin-promise eslint-plugin-import \
 - Increment minor version: Changed **warn** rules.
 - Increment patch version: Not changed **error** and **warn** rules.
 
+## Troubleshooting
+
+- [ESLint Configuration Issue with Non-Standard TSConfig Filenames in Flat Config](https://github.com/moneyforward/eslint-config-moneyforward/blob/main/docs/troubleshooting/eslint-configuration-issue-with-non-standard-tsconfig-filenames-in-flat-config.md)
+
 ## License
 
 Open source [licensed as MIT](https://github.com/moneyforward/eslint-config-moneyforward/blob/main/LICENSE).
