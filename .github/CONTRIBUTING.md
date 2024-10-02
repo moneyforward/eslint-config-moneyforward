@@ -10,7 +10,7 @@ I appreciate your considering contributing `eslint-config-moneyforward`. This do
 
 ### Installation
 
-1. Folk this repository and clone it locally
+1. Fork this repository and clone it locally
 
    ```bash
    git clone https://github.com/your-username/eslint-config-moneyforward.git
@@ -40,7 +40,7 @@ The main scripts used during development are:
 ### Development
 
 1. Check [the Issue Tracker](https://github.com/moneyforward/eslint-config-moneyforward/issues), make sure if there is anything relevant to the problem you are trying to solve.
-2. Keep the repository you did folk up to date.
+2. Keep the repository you did fork up to date.
 
    ```bash
     git fetch upstream
