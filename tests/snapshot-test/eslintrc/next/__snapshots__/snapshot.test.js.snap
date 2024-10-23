@@ -2981,7 +2981,7 @@ exports[`should match ESLint configuration snapshot: next 1`] = `
       2,
     ],
     "unicorn/prefer-global-this": [
-      2,
+      0,
     ],
     "unicorn/prefer-includes": [
       2,

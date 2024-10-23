@@ -53,6 +53,12 @@ module.exports = {
     // `undefined` and `null` have completely different meanings, so it's incorrect in JavaScript to standardize on `undefined`.
     'unicorn/no-null': ['off'],
 
+    // Enforce the use of globalThis over window, self, and global.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-global-this.md
+    // Although effective when the JavaScript execution environment is uncertain, there're many more well-defined use cases.
+    // So, it's not that important.
+    'unicorn/prefer-global-this': ['off'],
+
     // Prevent abbreviations.
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md
     // Use of widely recognized abbreviations is acceptable.

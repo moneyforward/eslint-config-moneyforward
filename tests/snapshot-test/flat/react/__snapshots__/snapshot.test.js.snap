@@ -2982,7 +2982,7 @@ exports[`should match ESLint Configuration snapshot: react 1`] = `
       2,
     ],
     "unicorn/prefer-global-this": [
-      2,
+      0,
     ],
     "unicorn/prefer-includes": [
       2,
