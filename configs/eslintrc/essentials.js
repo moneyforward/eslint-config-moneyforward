@@ -6,6 +6,7 @@ module.exports = {
     '../../rules/imports',
     '../../rules/promise',
     '../../rules/style',
+    '../../rules/unicorn',
     '../../rules/variables',
   ],
   parserOptions: {
