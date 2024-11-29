@@ -40,8 +40,8 @@
   "homepage": "https://github.com/moneyforward/eslint-config-moneyforward#readme",
   "dependencies": {
     "@next/eslint-plugin-next": "^15.0.3",
-    "@typescript-eslint/eslint-plugin": "^7.10.0",
-    "@typescript-eslint/parser": "^7.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
     "confusing-browser-globals": "^1.0.11",
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-import": "^2.31.0",
@@ -56,7 +56,8 @@
     "eslint-plugin-storybook": "^0.11.1",
     "eslint-plugin-testing-library": "^7.0.0",
     "eslint-plugin-unicorn": "^56.0.0",
-    "globals": "^15.11.0"
+    "globals": "^15.11.0",
+    "typescript-eslint": "^8.16.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
