@@ -1,0 +1,22 @@
+name: Restore Node.js env
+
+description: Restore the task runner infrastructure by Node.js
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: ./.node-version
+
+    - name: cache node_modules
+      uses: actions/cache@v4
+      with:
+        path: |
+          ./node_modules
+        key: node-${{ hashFiles('package-lock.json') }}
+
+    - name: install node_modules
+      shell: bash
+      run: npm install
