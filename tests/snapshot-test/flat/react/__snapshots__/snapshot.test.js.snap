@@ -3,7 +3,7 @@
 exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration snapshot: react 1`] = `
 {
   "languageOptions": {
-    "ecmaVersion": "latest",
+    "ecmaVersion": 2025,
     "globals": {
       "AggregateError": false,
       "Array": false,
@@ -315,7 +315,6 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
         "allowShortCircuit": true,
         "allowTaggedTemplates": true,
         "allowTernary": true,
-        "enforceForJSX": false,
       },
     ],
     "@typescript-eslint/no-unused-vars": [
@@ -429,6 +428,11 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "accessor-pairs": [
       0,
+      {
+        "enforceForClassMembers": true,
+        "getWithoutSet": false,
+        "setWithoutGet": true,
+      },
     ],
     "array-bracket-newline": [
       0,
@@ -459,7 +463,10 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     "camelcase": [
       0,
       {
+        "allow": [],
         "ignoreDestructuring": false,
+        "ignoreGlobals": false,
+        "ignoreImports": false,
         "properties": "never",
       },
     ],
@@ -492,9 +499,13 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "consistent-return": [
       0,
+      {
+        "treatUndefinedAsUnspecified": false,
+      },
     ],
     "consistent-this": [
       0,
+      "that",
     ],
     "constructor-super": [
       0,
@@ -505,6 +516,7 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "default-case": [
       0,
+      {},
     ],
     "default-case-last": [
       2,
@@ -516,6 +528,7 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
       0,
       {
         "allowKeywords": true,
+        "allowPattern": "",
       },
     ],
     "eqeqeq": [
@@ -539,10 +552,15 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     "func-names": [
       2,
       "as-needed",
+      {},
     ],
     "func-style": [
       0,
       "expression",
+      {
+        "allowArrowFunctions": false,
+        "overrides": {},
+      },
     ],
     "getter-return": [
       0,
@@ -552,6 +570,7 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "grouped-accessor-pairs": [
       2,
+      "anyOrder",
     ],
     "guard-for-in": [
       2,
@@ -561,9 +580,22 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "id-length": [
       0,
+      {
+        "exceptionPatterns": [],
+        "exceptions": [],
+        "min": 2,
+        "properties": "always",
+      },
     ],
     "id-match": [
       0,
+      "^.+$",
+      {
+        "classFields": false,
+        "ignoreDestructuring": false,
+        "onlyDeclarations": false,
+        "properties": false,
+      },
     ],
     "import/consistent-type-specifier-style": [
       2,
@@ -1355,6 +1387,10 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-bitwise": [
       2,
+      {
+        "allow": [],
+        "int32Hint": false,
+      },
     ],
     "no-caller": [
       2,
@@ -1389,6 +1425,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-constant-condition": [
       2,
+      {
+        "checkLoops": "allExceptWhileTrue",
+      },
     ],
     "no-constructor-return": [
       2,
@@ -1425,6 +1464,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-duplicate-imports": [
       0,
+      {
+        "includeExports": false,
+      },
     ],
     "no-else-return": [
       2,
@@ -1434,6 +1476,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-empty": [
       2,
+      {
+        "allowEmptyCatch": false,
+      },
     ],
     "no-empty-character-class": [
       2,
@@ -1451,6 +1496,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-empty-pattern": [
       2,
+      {
+        "allowObjectPatternsAsParameters": false,
+      },
     ],
     "no-empty-static-block": [
       2,
@@ -1460,24 +1508,35 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-eval": [
       2,
+      {
+        "allowIndirect": false,
+      },
     ],
     "no-ex-assign": [
       2,
     ],
     "no-extend-native": [
       2,
+      {
+        "exceptions": [],
+      },
     ],
     "no-extra-bind": [
       2,
     ],
     "no-extra-boolean-cast": [
       2,
+      {},
     ],
     "no-extra-label": [
       2,
     ],
     "no-fallthrough": [
       2,
+      {
+        "allowEmptyCase": false,
+        "reportUnusedFallthroughComment": false,
+      },
     ],
     "no-func-assign": [
       0,
@@ -1500,6 +1559,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-implicit-globals": [
       2,
+      {
+        "lexicalBindings": false,
+      },
     ],
     "no-implied-eval": [
       0,
@@ -1509,18 +1571,34 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-inline-comments": [
       0,
+      {},
     ],
     "no-inner-declarations": [
       2,
+      "functions",
+      {
+        "blockScopedFunctions": "allow",
+      },
     ],
     "no-invalid-regexp": [
       2,
+      {},
     ],
     "no-invalid-this": [
       2,
+      {
+        "capIsConstructor": true,
+      },
     ],
     "no-irregular-whitespace": [
       2,
+      {
+        "skipComments": false,
+        "skipJSXText": false,
+        "skipRegExps": false,
+        "skipStrings": true,
+        "skipTemplates": false,
+      },
     ],
     "no-iterator": [
       2,
@@ -1561,6 +1639,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-multi-assign": [
       2,
+      {
+        "ignoreNonDeclaration": false,
+      },
     ],
     "no-multi-str": [
       2,
@@ -1628,6 +1709,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-promise-executor-return": [
       2,
+      {
+        "allowVoid": false,
+      },
     ],
     "no-proto": [
       2,
@@ -1637,6 +1721,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-redeclare": [
       0,
+      {
+        "builtinGlobals": true,
+      },
     ],
     "no-regex-spaces": [
       2,
@@ -1986,12 +2073,21 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-sequences": [
       2,
+      {
+        "allowInParentheses": true,
+      },
     ],
     "no-setter-return": [
       0,
     ],
     "no-shadow": [
       0,
+      {
+        "allow": [],
+        "builtinGlobals": false,
+        "hoist": "functions",
+        "ignoreOnInitialization": false,
+      },
     ],
     "no-shadow-restricted-names": [
       2,
@@ -2013,6 +2109,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-undef": [
       0,
+      {
+        "typeof": false,
+      },
     ],
     "no-undef-init": [
       2,
@@ -2060,6 +2159,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-unsafe-negation": [
       0,
+      {
+        "enforceForOrderingRelations": false,
+      },
     ],
     "no-unsafe-optional-chaining": [
       2,
@@ -2073,6 +2175,7 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
         "allowShortCircuit": true,
         "allowTaggedTemplates": true,
         "allowTernary": true,
+        "enforceForJSX": false,
       },
     ],
     "no-unused-labels": [
@@ -2091,6 +2194,12 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-use-before-define": [
       0,
+      {
+        "allowNamedExports": false,
+        "classes": true,
+        "functions": true,
+        "variables": true,
+      },
     ],
     "no-useless-backreference": [
       2,
@@ -2103,6 +2212,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-useless-computed-key": [
       2,
+      {
+        "enforceForClassMembers": true,
+      },
     ],
     "no-useless-concat": [
       2,
@@ -2129,6 +2241,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "no-void": [
       2,
+      {
+        "allowAsStatement": false,
+      },
     ],
     "no-warning-comments": [
       0,
@@ -2267,6 +2382,7 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "radix": [
       2,
+      "always",
     ],
     "react-hooks/exhaustive-deps": [
       2,
@@ -2723,6 +2839,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "require-atomic-updates": [
       0,
+      {
+        "allowProperties": false,
+      },
     ],
     "require-await": [
       0,
@@ -2736,6 +2855,7 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     "sort-imports": [
       0,
       {
+        "allowSeparatedGroups": false,
         "ignoreCase": false,
         "ignoreDeclarationSort": false,
         "ignoreMemberSort": false,
@@ -2751,12 +2871,18 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
       0,
       "asc",
       {
+        "allowLineSeparatedGroups": false,
         "caseSensitive": false,
+        "ignoreComputedKeys": false,
+        "minKeys": 2,
         "natural": true,
       },
     ],
     "sort-vars": [
       0,
+      {
+        "ignoreCase": false,
+      },
     ],
     "symbol-description": [
       2,
@@ -3171,6 +3297,10 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "use-isnan": [
       2,
+      {
+        "enforceForIndexOf": false,
+        "enforceForSwitchCase": true,
+      },
     ],
     "valid-typeof": [
       2,
@@ -3183,6 +3313,11 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Configuration s
     ],
     "yoda": [
       2,
+      "never",
+      {
+        "exceptRange": false,
+        "onlyEquality": false,
+      },
     ],
   },
   "settings": {
