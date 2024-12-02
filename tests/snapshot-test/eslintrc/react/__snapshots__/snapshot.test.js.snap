@@ -227,7 +227,6 @@ exports[`should match ESLint configuration snapshot: react 1`] = `
         "allowShortCircuit": true,
         "allowTaggedTemplates": true,
         "allowTernary": true,
-        "enforceForJSX": false,
       },
     ],
     "@typescript-eslint/no-unused-vars": [
@@ -343,8 +342,6 @@ exports[`should match ESLint configuration snapshot: react 1`] = `
       2,
       {
         "allowImplicit": true,
-        "allowVoid": false,
-        "checkForEach": false,
       },
     ],
     "arrow-body-style": [
@@ -365,8 +362,6 @@ exports[`should match ESLint configuration snapshot: react 1`] = `
       0,
       {
         "ignoreDestructuring": false,
-        "ignoreGlobals": false,
-        "ignoreImports": false,
         "properties": "never",
       },
     ],
@@ -389,7 +384,6 @@ exports[`should match ESLint configuration snapshot: react 1`] = `
     "class-methods-use-this": [
       2,
       {
-        "enforceForClassFields": true,
         "exceptMethods": [],
       },
     ],
@@ -1246,7 +1240,6 @@ exports[`should match ESLint configuration snapshot: react 1`] = `
         ],
         "newIsCap": true,
         "newIsCapExceptions": [],
-        "properties": true,
       },
     ],
     "no-alert": [
@@ -1401,7 +1394,6 @@ exports[`should match ESLint configuration snapshot: react 1`] = `
       {
         "allow": [],
         "boolean": false,
-        "disallowTemplateShorthand": false,
         "number": true,
         "string": true,
       },
@@ -1931,11 +1923,6 @@ exports[`should match ESLint configuration snapshot: react 1`] = `
         "allow": [],
         "allowAfterSuper": false,
         "allowAfterThis": false,
-        "allowAfterThisConstructor": false,
-        "allowFunctionParams": true,
-        "allowInArrayDestructuring": true,
-        "allowInObjectDestructuring": true,
-        "enforceInClassFields": false,
         "enforceInMethodNames": true,
       },
     ],
@@ -1978,7 +1965,6 @@ exports[`should match ESLint configuration snapshot: react 1`] = `
         "allowShortCircuit": true,
         "allowTaggedTemplates": true,
         "allowTernary": true,
-        "enforceForJSX": false,
       },
     ],
     "no-unused-labels": [
