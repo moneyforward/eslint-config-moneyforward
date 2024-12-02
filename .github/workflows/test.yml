@@ -7,21 +7,15 @@ on:
 
 jobs:
   test:
-    strategy:
-      matrix:
-        eslint: [8]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: ./.node-version
+      - name: Initialize
+        uses: ./.github/actions/restore-node
 
-      - name: Use ESLint ${{ matrix.eslint }}
-        run: npm install eslint@${{ matrix.eslint }}
+      - name: Run Lint
+        run: npm run lint
 
-      - run: |
-          npm install --silent
-          npm run lint
-          npm run test
+      - name: Run Test
+        run: npm run test

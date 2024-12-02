@@ -30,13 +30,8 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: ./.node-version
-
-      - name: Install Dependencies
-        run: npm install
+      - name: Initialize
+        uses: ./.github/actions/restore-node
 
       - name: Release
         run: npm run release ${{ github.event.inputs.dry_run == 'true' && '-- --dry-run' || '' }}
