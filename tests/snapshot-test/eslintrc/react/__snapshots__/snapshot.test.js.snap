@@ -727,11 +727,17 @@ exports[`should match ESLint configuration snapshot: react 1`] = `
         ],
       },
     ],
+    "jsdoc/check-template-names": [
+      0,
+    ],
     "jsdoc/check-types": [
       2,
     ],
     "jsdoc/check-values": [
       2,
+    ],
+    "jsdoc/convert-to-jsdoc-comments": [
+      0,
     ],
     "jsdoc/empty-tags": [
       2,
@@ -743,6 +749,9 @@ exports[`should match ESLint configuration snapshot: react 1`] = `
       0,
     ],
     "jsdoc/informative-docs": [
+      0,
+    ],
+    "jsdoc/lines-before-block": [
       0,
     ],
     "jsdoc/match-description": [
@@ -891,6 +900,9 @@ exports[`should match ESLint configuration snapshot: react 1`] = `
       2,
     ],
     "jsdoc/require-returns-type": [
+      0,
+    ],
+    "jsdoc/require-template": [
       0,
     ],
     "jsdoc/require-throws": [
