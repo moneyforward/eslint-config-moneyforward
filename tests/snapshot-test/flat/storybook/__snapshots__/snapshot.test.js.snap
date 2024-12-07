@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
+exports[`ESLint Configuration Snapshot Tests should match ESLint Flat Configuration snapshot: storybook 1`] = `
 {
   "languageOptions": {
     "ecmaVersion": "latest",
@@ -67,20 +67,17 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
       "unescape": false,
     },
     "parser": {
-      "clearCaches": [Function],
-      "createProgram": [Function],
       "meta": {
         "name": "typescript-eslint/parser",
-        "version": "7.10.0",
+        "version": "8.16.0",
       },
-      "parse": [Function],
       "parseForESLint": [Function],
-      "version": "7.10.0",
     },
     "parserOptions": {
       "ecmaVersion": "latest",
-      "project": true,
+      "projectService": true,
       "sourceType": "module",
+      "tsconfigRootDir": "/dummy",
     },
     "sourceType": "module",
   },
@@ -101,9 +98,6 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
       },
     ],
     "@typescript-eslint/ban-tslint-comment": [
-      2,
-    ],
-    "@typescript-eslint/ban-types": [
       2,
     ],
     "@typescript-eslint/class-literal-property-style": [
@@ -183,6 +177,9 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
     "@typescript-eslint/no-confusing-void-expression": [
       2,
     ],
+    "@typescript-eslint/no-deprecated": [
+      2,
+    ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
@@ -195,7 +192,7 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
     "@typescript-eslint/no-empty-function": [
       2,
     ],
-    "@typescript-eslint/no-empty-interface": [
+    "@typescript-eslint/no-empty-object-type": [
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
@@ -228,9 +225,6 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
     "@typescript-eslint/no-invalid-void-type": [
       2,
     ],
-    "@typescript-eslint/no-loss-of-precision": [
-      2,
-    ],
     "@typescript-eslint/no-meaningless-void-operator": [
       2,
     ],
@@ -261,16 +255,19 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
     "@typescript-eslint/no-redundant-type-constituents": [
       2,
     ],
-    "@typescript-eslint/no-this-alias": [
+    "@typescript-eslint/no-require-imports": [
       2,
     ],
-    "@typescript-eslint/no-throw-literal": [
+    "@typescript-eslint/no-this-alias": [
       2,
     ],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
       2,
     ],
     "@typescript-eslint/no-unnecessary-condition": [
+      2,
+    ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
       2,
     ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
@@ -280,6 +277,9 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
       2,
     ],
     "@typescript-eslint/no-unnecessary-type-constraint": [
+      2,
+    ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
       2,
     ],
     "@typescript-eslint/no-unsafe-argument": [
@@ -297,10 +297,16 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
     "@typescript-eslint/no-unsafe-enum-comparison": [
       2,
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       1,
     ],
     "@typescript-eslint/no-unsafe-return": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
       2,
     ],
     "@typescript-eslint/no-unused-expressions": [
@@ -321,10 +327,7 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
     "@typescript-eslint/no-useless-constructor": [
       2,
     ],
-    "@typescript-eslint/no-useless-template-literals": [
-      2,
-    ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -334,6 +337,9 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
       2,
     ],
     "@typescript-eslint/prefer-as-const": [
+      2,
+    ],
+    "@typescript-eslint/prefer-find": [
       2,
     ],
     "@typescript-eslint/prefer-for-of": [
@@ -366,13 +372,16 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
     "@typescript-eslint/prefer-reduce-type-parameter": [
       2,
     ],
+    "@typescript-eslint/prefer-regexp-exec": [
+      2,
+    ],
     "@typescript-eslint/prefer-return-this-type": [
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
       2,
     ],
-    "@typescript-eslint/prefer-ts-expect-error": [
+    "@typescript-eslint/related-getter-setter-pairs": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -398,6 +407,10 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
         "allowNumber": false,
         "allowRegExp": false,
       },
+    ],
+    "@typescript-eslint/return-await": [
+      2,
+      "error-handling-correctness-only",
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
       2,
@@ -1104,7 +1117,7 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
       2,
     ],
     "no-class-assign": [
-      2,
+      0,
     ],
     "no-compare-neg-zero": [
       2,
@@ -1289,7 +1302,7 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
       2,
     ],
     "no-loss-of-precision": [
-      0,
+      2,
     ],
     "no-magic-numbers": [
       0,
@@ -1712,6 +1725,9 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
     "no-return-assign": [
       2,
       "always",
+    ],
+    "no-return-await": [
+      0,
     ],
     "no-script-url": [
       2,
