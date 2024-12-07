@@ -2505,6 +2505,9 @@ exports[`should match ESLint Flat Configuration snapshot: storybook 1`] = `
     "storybook/context-in-play-function": [
       2,
     ],
+    "storybook/csf-component": [
+      1,
+    ],
     "storybook/default-exports": [
       2,
     ],
