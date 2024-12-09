@@ -28,7 +28,7 @@ module.exports = {
     'import/core-modules': [],
     'import/ignore': [
       'node_modules',
-      '\\.(coffee|scss|css|less|hbs|svg|json|jpg|jpeg|png|webp)$',
+      String.raw`\.(coffee|scss|css|less|hbs|svg|json|jpg|jpeg|png|webp)$`,
     ],
     // TODO: Remove this once eslint-plugin-import supports Flat Config completely.
     // https://github.com/import-js/eslint-plugin-import/issues/2556#issuecomment-1419518561
