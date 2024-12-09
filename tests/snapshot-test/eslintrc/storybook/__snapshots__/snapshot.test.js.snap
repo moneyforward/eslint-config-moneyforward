@@ -46,11 +46,7 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "@typescript-eslint/dot-notation": [
       2,
       {
-        "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
-        "allowPattern": "",
-        "allowPrivateClassPropertyAccess": false,
-        "allowProtectedClassPropertyAccess": false,
       },
     ],
     "@typescript-eslint/explicit-function-return-type": [
@@ -432,11 +428,7 @@ exports[`should match ESLint configuration snapshot: storybook 1`] = `
     "dot-notation": [
       0,
       {
-        "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
-        "allowPattern": "",
-        "allowPrivateClassPropertyAccess": false,
-        "allowProtectedClassPropertyAccess": false,
       },
     ],
     "eqeqeq": [

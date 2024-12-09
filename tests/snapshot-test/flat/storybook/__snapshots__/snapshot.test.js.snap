@@ -191,6 +191,9 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Flat Configurat
     ],
     "@typescript-eslint/no-empty-function": [
       2,
+      {
+        "allow": [],
+      },
     ],
     "@typescript-eslint/no-empty-object-type": [
       2,
@@ -2716,6 +2719,16 @@ exports[`ESLint Configuration Snapshot Tests should match ESLint Flat Configurat
     ],
     "unicorn/expiring-todo-comments": [
       2,
+      {
+        "allowWarningComments": true,
+        "ignore": [],
+        "ignoreDatesOnPullRequests": true,
+        "terms": [
+          "todo",
+          "fixme",
+          "xxx",
+        ],
+      },
     ],
     "unicorn/explicit-length-check": [
       2,

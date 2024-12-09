@@ -2082,6 +2082,16 @@ exports[`should match ESLint Flat Configuration snapshot: node 1`] = `
     ],
     "unicorn/expiring-todo-comments": [
       2,
+      {
+        "allowWarningComments": true,
+        "ignore": [],
+        "ignoreDatesOnPullRequests": true,
+        "terms": [
+          "todo",
+          "fixme",
+          "xxx",
+        ],
+      },
     ],
     "unicorn/explicit-length-check": [
       2,
