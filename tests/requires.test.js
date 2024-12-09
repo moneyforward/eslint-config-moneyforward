@@ -1,16 +1,14 @@
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable n/global-require */
-const { readdirSync } = require('fs');
-const { resolve, join } = require('path');
+const { readdirSync } = require('node:fs');
+const path = require('node:path');
 
 test('parsable all eslintrc format configs', () => {
-  const dir = resolve(join(__dirname, '../configs/eslintrc'));
+  const directory = path.resolve(path.join(__dirname, '../configs/eslintrc'));
 
-  const files = readdirSync(dir, {
+  const files = readdirSync(directory, {
     withFileTypes: true,
-  })
-    .map((dirnet) => extractFilePath(dirnet, dir))
-    .flat();
+  }).flatMap((dirnet) => extractFilePath(dirnet, directory));
 
   files.forEach((file) => {
     expect(() => require(file)).not.toThrow();
@@ -18,29 +16,27 @@ test('parsable all eslintrc format configs', () => {
 });
 
 test('parsable all rules', () => {
-  const dir = resolve(join(__dirname, '../rules'));
+  const directory = path.resolve(path.join(__dirname, '../rules'));
 
-  const files = readdirSync(dir, {
+  const files = readdirSync(directory, {
     withFileTypes: true,
-  })
-    .map((dirnet) => extractFilePath(dirnet, dir))
-    .flat();
+  }).flatMap((dirnet) => extractFilePath(dirnet, directory));
 
   files.forEach((file) => {
     expect(() => require(file)).not.toThrow();
   });
 });
 
-function extractFilePath(dirent, dir) {
+function extractFilePath(dirent, directory) {
   if (dirent.isFile()) {
-    return `${dir}/${dirent.name}`;
+    return `${directory}/${dirent.name}`;
   }
 
   if (dirent.isDirectory()) {
-    return readdirSync(`${dir}/${dirent.name}`, {
+    return readdirSync(`${directory}/${dirent.name}`, {
       withFileTypes: true,
-    })
-      .map((child) => extractFilePath(child, `${dir}/${dirent.name}`))
-      .flat();
+    }).flatMap((child) =>
+      extractFilePath(child, `${directory}/${dirent.name}`),
+    );
   }
 }
