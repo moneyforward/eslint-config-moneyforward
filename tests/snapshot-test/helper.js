@@ -33,12 +33,11 @@ async function getESLintConfig(filePath, cwd = './', useFlatConfig = false) {
  * @returns Replaced rule set object.
  */
 function optimizeRules(rules) {
-  return Object.entries(rules).reduce(
-    (acc, [key, value]) => ({
-      ...acc,
-      [key]: value.toSpliced(0, 1, ruleLevelAsNumber(value[0])),
-    }),
-    {},
+  return Object.fromEntries(
+    Object.entries(rules).map(([key, value]) => [
+      key,
+      value.toSpliced(0, 1, ruleLevelAsNumber(value[0])),
+    ]),
   );
 }
 
