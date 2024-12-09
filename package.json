@@ -55,7 +55,7 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-storybook": "^0.11.1",
     "eslint-plugin-testing-library": "^7.0.0",
-    "eslint-plugin-unicorn": "^56.0.0",
+    "eslint-plugin-unicorn": "^56.0.1",
     "globals": "^15.11.0",
     "typescript-eslint": "^8.16.0"
   },
