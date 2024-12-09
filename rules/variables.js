@@ -39,12 +39,11 @@ module.exports = {
         name: 'isNaN',
         message: 'Use Number.isNaN instead.',
       },
-    ].concat(
-      confusingBrowserGlobals.map((g) => ({
+      ...confusingBrowserGlobals.map((g) => ({
         name: g,
         message: `Use window.${g} instead.`,
       })),
-    ),
+    ],
 
     // disallow declaration of variables already declared in the outer scope
     // https://eslint.org/docs/rules/no-shadow
