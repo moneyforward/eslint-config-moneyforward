@@ -1,3 +1,35 @@
+## [5.0.0](https://github.com/moneyforward/eslint-config-moneyforward/compare/4.1.2...5.0.0) (2024-12-10)
+
+### ⚠ BREAKING CHANGES
+
+* Update ESLint version requirements (#354)
+* Update TypeScript Rules and Config to support ESLint v9 (#338)
+* Update eslint-plugin-next version (#353)
+* Update eslint-plugin-testing-library version (#351)
+* Update eslint-plugin-react-hooks version (#349)
+* Update eslint-plugin-jsdoc version (#346)
+* Update eslint-plugin-promise version (#345)
+* Update eslint-plugin-import version (#344)
+* Add a ruleset powered by `unicorn` plugin into `essentials` config (#335)
+
+### Features
+
+* Add a ruleset powered by `unicorn` plugin into `essentials` config ([#335](https://github.com/moneyforward/eslint-config-moneyforward/issues/335)) ([c5a1544](https://github.com/moneyforward/eslint-config-moneyforward/commit/c5a154418be516431f825f9f3005bc29a140606f))
+* Update ESLint version requirements ([#354](https://github.com/moneyforward/eslint-config-moneyforward/issues/354)) ([78aa086](https://github.com/moneyforward/eslint-config-moneyforward/commit/78aa0863e8492dcc8cd4faa3fa3c84b53e328571))
+* Update eslint-plugin-import version ([#344](https://github.com/moneyforward/eslint-config-moneyforward/issues/344)) ([37927c4](https://github.com/moneyforward/eslint-config-moneyforward/commit/37927c46cde83c79a5cd2e874f18f11ed8735fe2))
+* Update eslint-plugin-jest version ([#342](https://github.com/moneyforward/eslint-config-moneyforward/issues/342)) ([5beb961](https://github.com/moneyforward/eslint-config-moneyforward/commit/5beb961cb00b852c17bbeac03a53358ae1869c3e))
+* Update eslint-plugin-jest-dom version ([#343](https://github.com/moneyforward/eslint-config-moneyforward/issues/343)) ([e803148](https://github.com/moneyforward/eslint-config-moneyforward/commit/e803148e25588ff212c4c2dc4c05b427fb5d89f1))
+* Update eslint-plugin-jsdoc version ([#346](https://github.com/moneyforward/eslint-config-moneyforward/issues/346)) ([9e0cf74](https://github.com/moneyforward/eslint-config-moneyforward/commit/9e0cf740a6c1d9d56a1649c6da75895cd36518af))
+* Update eslint-plugin-jsx-a11y version ([#348](https://github.com/moneyforward/eslint-config-moneyforward/issues/348)) ([85f8fe9](https://github.com/moneyforward/eslint-config-moneyforward/commit/85f8fe9333ef627d3b821824f15f0480cc5d33f2))
+* Update eslint-plugin-n version ([#347](https://github.com/moneyforward/eslint-config-moneyforward/issues/347)) ([3d78df4](https://github.com/moneyforward/eslint-config-moneyforward/commit/3d78df4f87ff5792892ff0e798d21ab784c1fc9b))
+* Update eslint-plugin-next version ([#353](https://github.com/moneyforward/eslint-config-moneyforward/issues/353)) ([e906b76](https://github.com/moneyforward/eslint-config-moneyforward/commit/e906b76e0eefe53f47306c86f18a304bf06e5f5f))
+* Update eslint-plugin-promise version ([#345](https://github.com/moneyforward/eslint-config-moneyforward/issues/345)) ([e7abb32](https://github.com/moneyforward/eslint-config-moneyforward/commit/e7abb323b66ba39eaff719d3049f391c6082d284))
+* Update eslint-plugin-react version ([#350](https://github.com/moneyforward/eslint-config-moneyforward/issues/350)) ([6c8551c](https://github.com/moneyforward/eslint-config-moneyforward/commit/6c8551cecdc54e1a5537abcc737905254e8b87f8))
+* Update eslint-plugin-react-hooks version ([#349](https://github.com/moneyforward/eslint-config-moneyforward/issues/349)) ([22f5358](https://github.com/moneyforward/eslint-config-moneyforward/commit/22f535853b06ae7206d7fe75f7c2cf61a49a4997))
+* Update eslint-plugin-storybook version ([#352](https://github.com/moneyforward/eslint-config-moneyforward/issues/352)) ([2171394](https://github.com/moneyforward/eslint-config-moneyforward/commit/21713948ef6dbf446ef5d6501b26314ab7a6085e))
+* Update eslint-plugin-testing-library version ([#351](https://github.com/moneyforward/eslint-config-moneyforward/issues/351)) ([ca2bcec](https://github.com/moneyforward/eslint-config-moneyforward/commit/ca2bcec25af75ccfef173ebfb478547c045de569))
+* Update TypeScript Rules and Config to support ESLint v9 ([#338](https://github.com/moneyforward/eslint-config-moneyforward/issues/338)) ([b945312](https://github.com/moneyforward/eslint-config-moneyforward/commit/b9453126a248c8e778d4630db78ef910c566728a))
+
 ## [4.1.2](https://github.com/moneyforward/eslint-config-moneyforward/compare/4.1.1...4.1.2) (2024-08-29)
 
 ## [4.1.1](https://github.com/moneyforward/eslint-config-moneyforward/compare/4.1.0...4.1.1) (2024-08-26)
