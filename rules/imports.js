@@ -93,20 +93,13 @@ module.exports = {
           'test.{js,jsx,ts,tsx}', // repos with a single test file
           'test-*.{js,jsx,ts,tsx}', // repos with multiple top-level test files
           '**/*{.,_}{test,spec}.{js,jsx,ts,tsx}', // tests where the extension or filename suffix denotes that it is a test
-          '**/jest.config.js', // jest config
-          '**/jest.setup.js', // jest setup
-          '**/vue.config.js', // vue-cli config
-          '**/webpack.config.js', // webpack config
-          '**/webpack.config.*.js', // webpack config
-          '**/rollup.config.js', // rollup config
-          '**/rollup.config.*.js', // rollup config
-          '**/protractor.conf.js', // protractor config
-          '**/protractor.conf.*.js', // protractor config
-          '**/karma.conf.js', // karma config
           '**/.eslintrc.js', // eslint config
           '**/eslint-rules/**',
           '**/.storybook/**', // storybook config
           '**/*.stories.{js,jsx,ts,tsx,mdx}', // storybook stories
+          '**/*.config.*',
+          '**/*.conf.*',
+          '**/*.setup.*',
         ],
         optionalDependencies: false,
       },
