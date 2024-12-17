@@ -1,3 +1,9 @@
+## [5.0.1](https://github.com/moneyforward/eslint-config-moneyforward/compare/5.0.0...5.0.1) (2024-12-17)
+
+### Bug Fixes
+
+* import/no-extraneous-dependencies ([#357](https://github.com/moneyforward/eslint-config-moneyforward/issues/357)) ([3f9dd7e](https://github.com/moneyforward/eslint-config-moneyforward/commit/3f9dd7e845eecad31f5a4a51c47be6eeaea08094))
+
 ## [5.0.0](https://github.com/moneyforward/eslint-config-moneyforward/compare/4.1.2...5.0.0) (2024-12-10)
 
 ### ⚠ BREAKING CHANGES
