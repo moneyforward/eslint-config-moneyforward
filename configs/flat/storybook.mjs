@@ -15,7 +15,10 @@ export default [
   ...storybook.configs['flat/csf-strict'],
 
   {
-    files: ['**/*.@(stories|story).@(ts|tsx|js|jsx|mjs|cjs)'],
+    files: [
+      '**/*.@(stories|story).@(ts|tsx|js|jsx|mjs|cjs)',
+      '**/.storybook/**/*.@(ts|tsx|js|jsx)',
+    ],
     rules: {
       'import/no-default-export': ['off'],
     },
