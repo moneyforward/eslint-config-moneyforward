@@ -1,3 +1,9 @@
+## [5.0.2](https://github.com/moneyforward/eslint-config-moneyforward/compare/5.0.1...5.0.2) (2025-02-06)
+
+### Bug Fixes
+
+* Disable `import/no-default-export` rule in `.storybook/` directory ([#362](https://github.com/moneyforward/eslint-config-moneyforward/issues/362)) ([11cade6](https://github.com/moneyforward/eslint-config-moneyforward/commit/11cade6e61aeeff83d3aa7c0389637b347540f59))
+
 ## [5.0.1](https://github.com/moneyforward/eslint-config-moneyforward/compare/5.0.0...5.0.1) (2024-12-17)
 
 ### Bug Fixes
