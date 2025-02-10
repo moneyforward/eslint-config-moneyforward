@@ -29,6 +29,20 @@ export default {
 };
 ```
 
+Must be added after `essentials`.
+
+We also provide various other rule sets that you can configure to suit your project.
+
+```json
+{
+  "extends": [
+    "@moneyforward/stylelint-config/essentials",
+    "@moneyforward/stylelint-config/css-modules",
+    "@moneyforward/stylelint-config/scss"
+  ]
+}
+```
+
 |      Rule set | Summary                                                                   | Dependencies                                                                                                                                              |
 | ------------: | :------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |  `essentials` | Contains standard, and recess-order configs                               | [`standard`](https://github.com/stylelint/stylelint-config-standard) <br> [`recess-order`](https://github.com/stormwarning/stylelint-config-recess-order) |
