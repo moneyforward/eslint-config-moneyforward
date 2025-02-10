@@ -13,22 +13,22 @@ I appreciate your considering contributing `eslint-config-moneyforward`. This do
 1. Fork this repository and clone it locally
 
    ```bash
-   git clone https://github.com/your-username/eslint-config-moneyforward.git
+   git clone https://github.com/your-username/frontend-tools.git
    ```
 
 2. Move to the directory and install dependencies
 
    ```bash
-   cd eslint-config-moneyforward
-   npm install
+   cd frontend-tools
+   pnpm install
    ```
 
 ### Development
 
 The main scripts used during development are:
 
-- `npm run lint`: Runs lint on your code.
-- `npm run test`: Runs unit tests.
+- `pnpm lint`: Runs lint on your code.
+- `pnpm test`: Runs unit tests.
 
 ## How to Contribute
 
