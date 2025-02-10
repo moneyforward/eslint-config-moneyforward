@@ -1,89 +1,31 @@
 {
-  "name": "eslint-config-moneyforward",
-  "version": "5.0.2",
-  "description": "Money Forward's ESLint rules as an extensible shared config.",
-  "exports": {
-    "./flat": {
-      "import": "./configs/flat/index.mjs"
-    },
-    "./essentials": "./configs/eslintrc/essentials.js",
-    "./jsdoc": "./configs/eslintrc/jsdoc.js",
-    "./next": "./configs/eslintrc/next.js",
-    "./node": "./configs/eslintrc/node.js",
-    "./react": "./configs/eslintrc/react.js",
-    "./storybook": "./configs/eslintrc/storybook.js",
-    "./test/*": "./configs/eslintrc/test/*.js",
-    "./typescript": "./configs/eslintrc/typescript.js"
-  },
+  "name": "frontend-tools",
+  "description": "Money Forward's frontend tools as an extensible shared config.",
+  "private": true,
+  "type": "module",
   "engines": {
-    "node": "^18.18.0 || ^20.9.0 || >=21.1.0",
-    "pnpm": "9.15.1"
+    "node": "22.13.1",
+    "pnpm": "9.15.1",
+    "npm": "please use pnpm instead",
+    "yarn": "please use pnpm instead"
   },
   "packageManager": "pnpm@9.15.1",
-  "files": [
-    "configs",
-    "rules"
-  ],
   "scripts": {
-    "lint": "eslint && prettier --check .",
-    "lint:fix": "eslint --fix && prettier --write .",
-    "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" jest",
-    "release": "semantic-release"
+    "format": "prettier -c './**/*.@(js|cjs|ts|tsx|md)' -w",
+    "eslint-config": "pnpm -F 'eslint-config-moneyforward'"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/moneyforward/eslint-config-moneyforward.git"
+    "url": "https://github.com/moneyforward/frontend-tools.git"
   },
   "author": "Money Forward Engineers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/moneyforward/eslint-config-moneyforward/issues"
+    "url": "https://github.com/moneyforward/frontend-tools/issues"
   },
-  "homepage": "https://github.com/moneyforward/eslint-config-moneyforward#readme",
-  "dependencies": {
-    "@next/eslint-plugin-next": "^15.0.3",
-    "@typescript-eslint/eslint-plugin": "^8.16.0",
-    "@typescript-eslint/parser": "^8.16.0",
-    "confusing-browser-globals": "^1.0.11",
-    "eslint-import-resolver-typescript": "^3.6.3",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jest": "^28.9.0",
-    "eslint-plugin-jest-dom": "^5.5.0",
-    "eslint-plugin-jsdoc": "^50.6.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-n": "^17.14.0",
-    "eslint-plugin-promise": "^7.2.1",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-storybook": "^0.11.1",
-    "eslint-plugin-testing-library": "^7.0.0",
-    "eslint-plugin-unicorn": "^56.0.1",
-    "globals": "^15.11.0",
-    "typescript-eslint": "^8.16.0"
-  },
+  "homepage": "https://github.com/moneyforward/frontend-tools#readme",
   "devDependencies": {
-    "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/git": "10.0.1",
-    "conventional-changelog-conventionalcommits": "8.0.0",
-    "eslint": "9.16.0",
-    "eslint-config-prettier": "9.1.0",
-    "jest": "29.7.0",
     "prettier": "3.4.2",
-    "prettier-plugin-organize-imports": "4.1.0",
-    "semantic-release": "24.2.1",
-    "typescript": "5.7.3"
-  },
-  "peerDependencies": {
-    "eslint": "^8.57.0 || ^9.0.0",
-    "jest": "*",
-    "typescript": "^4.8.4 || ^5.0.0"
-  },
-  "peerDependenciesMeta": {
-    "jest": {
-      "optional": true
-    },
-    "typescript": {
-      "optional": true
-    }
+    "prettier-plugin-organize-imports": "4.1.0"
   }
 }
