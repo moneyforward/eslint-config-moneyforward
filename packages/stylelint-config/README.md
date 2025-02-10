@@ -1,4 +1,4 @@
-# stylelint-config-moneyforward
+# @moneyforward/stylelint-config
 
 The Stylelint rules of Money Forward, Inc as an extensible shared config.
 
@@ -7,7 +7,7 @@ The Stylelint rules of Money Forward, Inc as an extensible shared config.
 ### 1. Install dependencies (and peer dependencies)
 
 ```bash
-npm install --save-dev stylelint stylelint-config-moneyforward
+npm install --save-dev stylelint @moneyforward/stylelint-config
 ```
 
 ### 2. Configure Stylelint
@@ -16,7 +16,7 @@ Within your Stylelint config file (`stylelint.config.js` or `.stylelintrc.js`):
 
 ```js
 export default {
-  extends: ['stylelint-config-moneyforward/essentials'],
+  extends: ['@moneyforward/stylelint-config/essentials'],
 };
 ```
 
@@ -24,8 +24,8 @@ If you need CSS Modules support:
 
 ```diff
 export default {
-- extends: ['stylelint-config-moneyforward/essentials'],
-+ extends: ['stylelint-config-moneyforward/essentials', 'stylelint-config-moneyforward/css-modules'],
+- extends: ['@moneyforward/stylelint-config/essentials'],
++ extends: ['@moneyforward/stylelint-config/essentials', '@moneyforward/stylelint-config/css-modules'],
 };
 ```
 
@@ -43,7 +43,7 @@ If the value of a rule does not suit you, specify that rule in the "rules" secti
 
 ```diff
 export default {
-  extends: ['stylelint-config-moneyforward/essentials'],
+  extends: ['@moneyforward/stylelint-config/essentials'],
 + rules: {
 +   value-keyword-case': null,
 + },
@@ -52,7 +52,7 @@ export default {
 
 ## Migrate from an existing configuration
 
-stylelint-config-moneyforward contains various plugins related to different rule sets. Therefore, users don't need to install them separately. If you have installed them in your existing configuration, we recommend uninstalling them.
+@moneyforward/stylelint-config contains various plugins related to different rule sets. Therefore, users don't need to install them separately. If you have installed them in your existing configuration, we recommend uninstalling them.
 
 ```bash
 npm uninstall stylelint-config-standard \
