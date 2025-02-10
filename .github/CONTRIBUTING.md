@@ -1,6 +1,6 @@
 # Contributing
 
-I appreciate your considering contributing `eslint-config-moneyforward`. This document is a guide to help make your contribution easier.
+I appreciate your considering contributing `frontend-tools`. This document is a guide to help make your contribution easier.
 
 ## Getting Started
 
@@ -34,12 +34,12 @@ The main scripts used during development are:
 
 ### Reporting Issues
 
-1. Check [the Issue Tracker](https://github.com/moneyforward/eslint-config-moneyforward/issues) for existing issues.
-2. When requesting a new issue or feature, please use [the templates](https://github.com/moneyforward/eslint-config-moneyforward/issues/new/choose) and provide as much detail as possible.
+1. Check [the Issue Tracker](https://github.com/moneyforward/frontend-tools/issues) for existing issues.
+2. When requesting a new issue or feature, please use [the templates](https://github.com/moneyforward/frontend-tools/issues/new/choose) and provide as much detail as possible.
 
 ### Development
 
-1. Check [the Issue Tracker](https://github.com/moneyforward/eslint-config-moneyforward/issues), make sure if there is anything relevant to the problem you are trying to solve.
+1. Check [the Issue Tracker](https://github.com/moneyforward/frontend-tools/issues), make sure if there is anything relevant to the problem you are trying to solve.
 2. Keep the repository you did fork up to date.
 
    ```bash
@@ -79,7 +79,9 @@ The main scripts used during development are:
 
 ### Code Style
 
-- Code according to [ESlint](/.eslintrc.js) and [Prettier](/.prettierrc.js) rules.
+- Code according to[Prettier](/prettier.config.js) and the following ESLint rules:
+  - **eslint-config-moneyforward**: [eslint.config.mjs](/packages/eslint-config/eslint.config.mjs)
+  - **@moneyforward/stylelint-config**: [stylelint.config.js](/packages/stylelint-config/eslint.config.js)
 - Keep your code in a consistent style.
 
 ### Testing

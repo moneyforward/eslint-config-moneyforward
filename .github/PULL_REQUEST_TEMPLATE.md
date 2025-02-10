@@ -17,7 +17,7 @@
 
 ## Pre-flight checklist
 
-- [ ] I have read the [Contributing Guidelines](https://github.com/moneyforward/eslint-config-moneyforward/blob/main/.github/CONTRIBUTING.md)
+- [ ] I have read the [Contributing Guidelines](https://github.com/moneyforward/frontend-tools/blob/main/.github/CONTRIBUTING.md)
 - [ ] Performed a self-review of my code
 
 ## References

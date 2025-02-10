@@ -46,7 +46,7 @@
   "bugs": {
     "url": "https://github.com/moneyforward/frontend-tools/issues"
   },
-  "homepage": "https://github.com/moneyforward/frontend-tools/tree/main/packages/eslint-config-moneyforward#readme",
+  "homepage": "https://github.com/moneyforward/frontend-tools/tree/main/packages/eslint-config#readme",
   "dependencies": {
     "@next/eslint-plugin-next": "^15.0.3",
     "@typescript-eslint/eslint-plugin": "^8.16.0",

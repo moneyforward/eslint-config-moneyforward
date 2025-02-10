@@ -1,7 +1,7 @@
 # eslint-config-moneyforward
 
 [![Version](https://img.shields.io/npm/v/eslint-config-moneyforward.svg?style=flat-square)](https://www.npmjs.com/package/eslint-config-moneyforward?activeTab=versions)
-[![License](https://img.shields.io/github/license/moneyforward/eslint-config-moneyforward.svg?style=flat-square)](https://github.com/moneyforward/eslint-config-moneyforward/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/moneyforward/frontend-tools.svg?style=flat-square)](https://github.com/moneyforward/frontend-tools/blob/main/packages/eslint-config/LICENSE)
 
 This package provides moneyforward's `.eslintrc` as an extensible shared config.
 
@@ -180,8 +180,8 @@ npm uninstall eslint-plugin-promise eslint-plugin-import eslint-plugin-unicorn \
 
 ## Troubleshooting
 
-- [ESLint Configuration Issue with Non-Standard TSConfig Filenames in Flat Config](https://github.com/moneyforward/frontend-tools/blob/main/packages/eslint-config-moneyforward/docs/troubleshooting/eslint-configuration-issue-with-non-standard-tsconfig-filenames-in-flat-config.md)
+- [ESLint Configuration Issue with Non-Standard TSConfig Filenames in Flat Config](https://github.com/moneyforward/frontend-tools/blob/main/packages/eslint-config/docs/troubleshooting/eslint-configuration-issue-with-non-standard-tsconfig-filenames-in-flat-config.md)
 
 ## License
 
-Open source [licensed as MIT](https://github.com/moneyforward/frontend-tools/blob/main/packages/eslint-config-moneyforward/LICENSE).
+Open source [licensed as MIT](https://github.com/moneyforward/frontend-tools/blob/main/packages/eslint-config/LICENSE).
