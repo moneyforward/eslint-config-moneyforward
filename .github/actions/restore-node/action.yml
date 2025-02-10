@@ -10,13 +10,17 @@ runs:
       with:
         node-version-file: ./.node-version
 
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v4.0.0
+
     - name: cache node_modules
       uses: actions/cache@v4
       with:
         path: |
           ./node_modules
-        key: node-${{ hashFiles('package-lock.json') }}
+          ./packages/*/node_modules
+        key: node-${{ hashFiles('**/pnpm-lock.yaml') }}
 
     - name: install node_modules
       shell: bash
-      run: npm install
+      run: pnpm install --frozen-lockfile
