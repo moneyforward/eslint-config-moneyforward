@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "types": ["vitest/globals"]
+  }
+}

@@ -1,0 +1,25 @@
+import { essentials, node, typescript } from "eslint-config-moneyforward/flat";
+
+export default [
+  {
+    files: ["**/*.js"],
+  },
+
+  ...essentials,
+  {
+    rules: {
+      "import/no-default-export": ["off"],
+      "unicorn/filename-case": ["off"],
+    },
+  },
+  {
+    files: ["**/*.config.@(js|ts)"],
+    rules: {
+      "import/no-extraneous-dependencies": ["off"],
+    },
+  },
+
+  ...node,
+
+  ...typescript,
+];
