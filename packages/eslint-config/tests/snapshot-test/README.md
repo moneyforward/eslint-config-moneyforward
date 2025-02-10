@@ -7,13 +7,13 @@ In the context of ESLint, we use snapshot testing to ensure that our configurati
 To run the snapshot test, use the following command:
 
 ```bash
-npm run test
+pnpm test
 ```
 
 If the test fails, and the changes to the ESLint configuration are intentional, you can update the snapshot using the following command:
 
 ```bash
-npm run test -- -u
+pnpm test -- -u
 ```
 
 This will update the snapshot to match the current configuration. The updated snapshot should then be committed along with the changes to the ESLint configuration.
