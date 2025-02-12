@@ -1,0 +1,55 @@
+{
+  "name": "@moneyforward/stylelint-config",
+  "version": "0.1.0",
+  "description": "Money Forward's Stylelint rules as an extensible shared config.",
+  "type": "module",
+  "exports": {
+    "./*": "./configs/*"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "files": [
+    "configs"
+  ],
+  "scripts": {
+    "lint": "eslint './**/*.@(js|ts)'",
+    "test": "vitest",
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moneyforward/frontend-tools.git",
+    "directory": "packages/stylelint-config"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "style best practices",
+    "css modules",
+    "scss"
+  ],
+  "author": "Money Forward Engineers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moneyforward/frontend-tools/issues"
+  },
+  "homepage": "https://github.com/moneyforward/frontend-tools/tree/main/packages/stylelint-config#readme",
+  "dependencies": {
+    "stylelint-config-recess-order": "^6.0.0",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-config-standard-scss": "^14.0.0"
+  },
+  "devDependencies": {
+    "@frontend-tools/release-config": "workspace:*",
+    "@types/node": "22.10.2",
+    "eslint": "9.20.0",
+    "eslint-config-moneyforward": "workspace:*",
+    "stylelint": "16.13.0",
+    "typescript": "5.7.3",
+    "vitest": "3.0.5"
+  },
+  "peerDependencies": {
+    "stylelint": "^16.13.0"
+  }
+}
