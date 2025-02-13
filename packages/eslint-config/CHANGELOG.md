@@ -1,3 +1,13 @@
+## [eslint-config-moneyforward-v5.1.0](https://github.com/moneyforward/frontend-tools/compare/5.0.2...5.1.0) (2025-02-13)
+
+### Features
+
+* **eslint-config:** Update `typescript-eslint` deps ([#366](https://github.com/moneyforward/frontend-tools/issues/366)) ([719d2da](https://github.com/moneyforward/frontend-tools/commit/719d2da8f021bc6b16b405fcc8544af5042c369a))
+
+### Bug Fixes
+
+* **eslint-config:** Fix the repository url ([#365](https://github.com/moneyforward/frontend-tools/issues/365)) ([87beb0c](https://github.com/moneyforward/frontend-tools/commit/87beb0cf6c8429b9e8abc36c130cb843efdb65c7))
+
 ## [5.0.2](https://github.com/moneyforward/eslint-config-moneyforward/compare/5.0.1...5.0.2) (2025-02-06)
 
 ### Bug Fixes
