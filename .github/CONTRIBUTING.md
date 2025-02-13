@@ -81,7 +81,7 @@ The main scripts used during development are:
 
 - Code according to[Prettier](/prettier.config.js) and the following ESLint rules:
   - **eslint-config-moneyforward**: [eslint.config.mjs](/packages/eslint-config/eslint.config.mjs)
-  - **@moneyforward/stylelint-config**: [stylelint.config.js](/packages/stylelint-config/eslint.config.js)
+  - **stylelint-config-moneyforward**: [stylelint.config.js](/packages/stylelint-config/eslint.config.js)
 - Keep your code in a consistent style.
 
 ### Testing
