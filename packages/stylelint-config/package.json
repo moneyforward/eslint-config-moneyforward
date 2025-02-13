@@ -1,6 +1,6 @@
 {
   "name": "@moneyforward/stylelint-config",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Money Forward's Stylelint rules as an extensible shared config.",
   "type": "module",
   "exports": {
