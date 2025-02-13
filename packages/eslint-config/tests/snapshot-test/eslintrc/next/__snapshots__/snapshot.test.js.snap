@@ -217,6 +217,9 @@ exports[`should match ESLint configuration snapshot: next 1`] = `
         "checksVoidReturn": false,
       },
     ],
+    "@typescript-eslint/no-misused-spread": [
+      2,
+    ],
     "@typescript-eslint/no-mixed-enums": [
       2,
     ],
