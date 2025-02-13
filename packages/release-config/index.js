@@ -54,6 +54,4 @@ module.exports = {
     ],
     '@semantic-release/github',
   ],
-  // eslint-disable-next-line no-template-curly-in-string
-  // tagFormat: '${version}',
 };
