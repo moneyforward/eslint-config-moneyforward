@@ -14,7 +14,8 @@
   ],
   "scripts": {
     "lint": "eslint './**/*.@(js|ts)'",
-    "test": "vitest"
+    "test": "vitest",
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
